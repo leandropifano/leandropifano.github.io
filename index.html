@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Template | Home</title>
+	<!--ESTILOS Y JAVASCRIPT-->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="script.js"></script>
+	<!--FUENTES DE GOOGLE-->
+	<link href='https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+	<!--ICONOS Font Awesome-->
+	<script src="https://kit.fontawesome.com/300d4100ca.js" crossorigin="anonymous"></script>
+</head>
+<body onload="seteo_selects()">
+
+	<header class="header">
+		<section class="theme-selector">
+
+			<label for="theme-color">Color: </label>
+			<select name="theme-color" id="theme-color" title="color-01" onchange="seteo_color()">
+				<option value="color-01" default selected="selected">Verde</option>
+				<option value="color-02">Azul</option>
+				<option value="color-03">Naranja</option>
+			</select>
+
+			<label for="theme-img">Cabecera: </label>
+			<select name="theme-img" id="theme-img" onchange="seteo_img()">
+				<option value="img-01">Mosaico</option>
+				<option value="img-02">Calle</option>
+				<option value="img-03" selected>Dibujo</option>
+			</select>
+
+		</section>
+
+		<h1><img name="logo" src="images/logo.png" alt="Logo - template"></h1>
+
+	</header>
+
+	<nav class="navbar">
+		<a href="">Inicio</a>
+		<a href="">Quiénes somos</a>
+		<a href="">Localización</a>
+		<a href="">Productos</a>
+		<a href="">Tarifas</a>
+	</nav>
+
+	<section class="content who">
+		<h2 class="title deslizar desizq">Quiénes somos</h2><span class="fas fa-3x fa-question deslizar desizq"></span>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis ligula felis, placerat feugiat arcu iaculis vitae. Proin eget velit a risus cursus sollicitudin.</p>
+		<p>Nunc neque tortor, rutrum a ex ac, ornare lacinia ante. Vivamus quis lacus non elit finibus ultricies. <br>Etiam porttitor leo ac turpis porttitor sollicitudin. Phasellus in nulla magna. Etiam et eros hendrerit, malesuada tortor et, tincidunt felis. Fusce sed lacinia felis. Pellentesque lacinia mollis dolor sit amet venenatis. Fusce euismod rhoncus magna, quis tincidunt orci dictum at. Maecenas vitae cursus diam, vitae consectetur elit. <br> Maecenas efficitur auctor faucibus. Nulla id justo libero. Aenean sodales erat in sem posuere eleifend.  </p>
+	</section>
+
+	<section class="content productos">
+		<h2 class="title deslizar desder">Productos</h2><span class="fas fa-3x fa-paperclip deslizar desder"></span>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis ligula felis, placerat<br> feugiat arcu iaculis vitae. Proin eget velit a risus cursus sollicitudin.</p>
+
+		<ul class="list-productos">
+			<li>
+				<figure>
+					<img src="images/ico-1.png">
+					<figcaption>Tipo 1</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/ico-2.png">
+					<figcaption>Tipo 2</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/ico-3.png">
+					<figcaption>Tipo 3</figcaption>
+				</figure>
+			</li>
+		</ul>
+	</section>
+
+	<section class="content tarifas ">
+		<article class="contain">
+			<h2 class="title deslizar desizq">Tarifas</h2><span class="fas fa-3x fa-hand-holding-usd deslizar desizq"></span>
+			<p>Si quieres saber las tarifas de nuestros productos no dudes en ponerte en contacto con nosotros.</p>
+			<p>Resolveremos cualquier duda que tengas.</p>
+
+			<a href="" class="btn">Contáctanos</a>
+		</article>
+	</section>
+
+	<section class="content localizacion">
+		<h2 class="title deslizar desder">Localización</h2><span class="fas fa-3x fa-map-marker-alt deslizar desder"></span>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis ligula felis, placerat<br> feugiat arcu iaculis vitae. Proin eget velit a risus cursus sollicitudin.</p>
+		<figure class="map"><img src="images/dummy-mapa.jpg" alt="" title=""></figure>
+	</section>
+
+</body>
+</html>
