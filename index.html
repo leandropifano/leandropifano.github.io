@@ -3,6 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Leandro Pifano | CV</title>
+	<!-- Mis ETILOS Y JAVASCRIPT -->
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/script.js"></script>
+	<!-- Fuentes de GOOGLE-->
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<!-- Iconos BANDERAS-->
+	<link rel="stylesheet" href="includes/flag-icons-main/css/flag-icons.min.css">
+	<!-- Iconos DEVICONS-->
+	<link rel="stylesheet" href="includes/devicon-2.15.1/devicon.min.css"> 
 	<!-- Boostrap JavaScript/Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<!-- Boostrap CSS-->
@@ -11,28 +20,714 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 	<!--ICONOS Font Awesome-->
 	<script src="https://kit.fontawesome.com/300d4100ca.js" crossorigin="anonymous"></script>
+	<!-- Typed JS -->
+	<script src="includes/typed-2.0.12/typed.min.js"></script>
+	<!-- AOS / Animate On Scroll Library -->
+	<link rel="stylesheet" href="includes/aos-2.3.4/aos.css">
+	<script src="includes/aos-2.3.4/aos.js"></script>
+	<!-- Tag Canvas -->
+	<script src="includes/tagcanvas 2.11/tagcanvas.min.js" type="text/javascript"></script>
 </head>
-<body>
-
-	<header class="container-fluid bg-secondary bg-gradient my-0">
-		<div class="row justify-content-center text-center">
-			<div class="col bg-dark bg-gradient text-white">
-				<span class="fas fa-3x fa-clock"></span>
-			</div>
-			<h1 class="col">
-				Pendiente
-			</h1>
-			<div class="col bg-dark bg-gradient text-white">
-				<span class="fas fa-3x fa-clock"></span>
-			</div>
-		  </div>
-	</header>
-
-	<nav class="navbar">
-		
+<body onscroll="scroll_to()" class="bg-secondary bg-gradient col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<nav class="navbar fixed-top py-1" id="navbar">
+		<!--i class="navbar-ico text-white ps-2 pt-1" id="navbar-ico">000</i-->
+		<a class="mt-0" href="#section_header">Inicio</a>
+		<a href="#header_myinfo">Info</a>
+		<a href="#header_mystudies">Estudios</a>
+		<a href="#header_myexperiences">Trabajos</a>
+		<a class="mb-5" href="#header_myskills">Skills</a>
 	</nav>
-	<div class="container bg-success bg-gradient text-center p-5 my-0">
-		<h2>Por subir... <i class="bi-alarm"></i></h2>
+	<!-----------1st page START------------------>
+	<section id="section_header" class="d-flex flex-row align-items-center justify-content-center bg-dark bg-gradient text-white text-center min-vh-100 m-0 p-0">
+		<img id="header_img" src="media/yo.png" class="img-fluid align-self-end w-25" alt="...">
+		<div class="box mb-5 mt-0 pt-0">
+			<div class="myname mt-0">
+				<span class="block"></span>
+				<h1 class="text-white">Leandro Pifano Herrera</h1>
+			</div>
+			<div class="role">
+				<div class="block"></div>
+				<p class="text-info fs-4 fw-light"><span id="span_typed" data-typed-items="Resumen Profesional - Personal, CV Online"></span></p>
+			</div>
+			<div class="social-links mb-5 pb-5">
+				<a href="mailto:leandropifano@gmail.com" class="google"><i class="fab fa-2x fa-google" data-bs-toggle="tooltip" data-bs-placement="left" title="leandropifano@gmail.com"></i></a>
+				<a href="https://github.com/leandropifano" class="github"><i class="fab fa-2x fa-github m-2" data-bs-toggle="tooltip" data-bs-placement="bottom" data-container="body" title="https://github.com/leandropifano"></i></a>
+				<a href="https://linkedin.com/in/leandropifano" class="linkedin"><i class="fab fa-2x fa-linkedin" data-bs-toggle="tooltip" data-bs-placement="right" title="https://linkedin.com/in/leandropifano"></i></a>
+			</div>
+		</div>
+
+		<div id="myCanvasContainer" class="align-self-end m-0 p-0 me-2">
+			<canvas width="300" height="300" id="myCanvas">
+			 <p>In Internet Explorer versions up to 8, things inside the canvas are inaccessible!</p>
+			</canvas>
+		</div>
+		   
+		<div id="tags">
+		<ul>
+			<li><a class="bg-primary bg-opacity-75 fs-1">Versátil</a></li>
+			<li><a class="bg-primary bg-opacity-75 fs-1">Autodidacta</a></li>
+			<li><a class="bg-primary bg-opacity-75 fs-1">Resolutivo</a></li>
+			<li><a class="bg-primary bg-opacity-75 fs-1">Analítico</a></li>
+			<li><a class="bg-primary bg-opacity-75 fs-1">Creativo</a></li>
+			<li><a class="bg-info bg-opacity-75 fs-3">Scripter</a></li>
+			<li><a class="bg-info bg-opacity-75 fs-3">Software Libre</a></li>
+			<li><a class="bg-info bg-opacity-75 fs-3">Documentador Técnico</a></li>
+			<li><a class="bg-info bg-opacity-75 fs-3">Server Admin</a></li>
+		</ul>
+		</div>
+
+	</section>
+	<!-----------1st page END------------------>
+	<!-----------2nd page START---------------->
+	<div id="header_myinfo" class="title text-center py-5" data-aos="zoom-in" data-aos-duration="2000">
+		<span class="block"></span>
+		<hr><h1 class="text-dark"><i class="fa fs-2 fa-list mx-5"></i>Mis Datos<i class="fa fs-2 fa-list mx-5"></i></h1><hr>
+	</div>		
+	<section id="section_myinfo" class="p-0 m-0">
+		<div class="d-flex row justify-content-between col-lg-12 col-sm-12 col-xs-12">
+			<div class="card_contacto card border-white bg-dark bg-opacity-75 col mb-4 mt-3 ps-4 col-lg-4 col-sm-4 col-xs-4" data-aos="fade-down-left" data-aos-duration="1500">
+				<div class="card-header border-white text-primary text-center">Datos de Locación</div>
+				<div class="card-body text-white">
+					<h5 class="card-title text-primary">Ciudad de Nacimiento</h5>
+					<p class="card-text my-0 ms-3"><span class="fi fi-ar mx-2"></span>Buenos Aires<span class="fs-6 fw-light text-secondary">, Argentina</span></p>
+					<h5 class="card-title text-primary mt-1">Ciudad Actual</h5>
+					<p class="card-text my-0 ms-3"><span class="fi fi-uy mx-2"></span>Montevideo<span class="fs-6 fw-light text-secondary">, Uruguay</span></p>
+					<p class="card-text my-0 ms-5"><span class="fs-6 fw-lighter text-secondary">Zona: La Blanqueada</span></p>
+				</div>
+			</div>
+			<div class="card_contacto card border-white bg-dark bg-opacity-75 col mb-3 mt-4 col-lg-4 col-sm-4 col-xs-4" data-aos="fade-down" data-aos-duration="3000">
+				<div class="card-header border-white text-success text-center">Datos Personales</div>
+				<div class="card-body text-white">
+					<h5 class="card-title text-success">Fecha de Nacimiento</h5>
+					<p class="card-text my-0 ms-3"><i class="fas fa-birthday-cake mx-2"></i>22 de Diciembre de 1992<span class="fs-6 fw-light text-secondary"> (29 años)</span></p>
+					<h5 class="card-title text-success mt-1">Estado Civil<span class="float-end">Situacion Laboral</span></h5>
+					<p class="card-text my-0 ms-2"><i class="fas fa-user mx-2"></i>Soltero<span class="float-end"><i class="fas fa-handshake mx-2"></i>Contrato a prueba</span></p>
+					<h5 class="card-title text-success mt-1">Documentos</h5>
+					<p class="card-text my-0 ms-2"><span class="fi fi-uy mx-2"></span>CI - Cedula de Identidad</p>
+					<p class="card-text my-0 ms-2"><span class="fi fi-ar mx-2"></span>DNI - Documento Nacional de Identidad</p>
+					<p class="card-text my-0 ms-2"><i class="fas fa-passport ms-2 me-3"></i>Pasaporte</p>
+				</div>
+			</div>
+			<div class="card_contacto card border-white bg-dark bg-opacity-75 col mb-4 mt-3 col-lg-4 col-sm-4 col-xs-4" data-aos="fade-down-right" data-aos-duration="1500">
+				<div class="card-header border-white text-info text-center">Datos de Contacto</div>
+				<div class="card-body text-white">
+					<h6 class="card-subtitle mb-2 text-muted text-end">Montevideo, Uruguay</h6>
+					<h5 class="card-title text-info">Teléfonos <span class="fs-6 fw-light text-secondary">(+598)</span></h5>
+					<p class="card-text my-0 ms-3"><i class="fas fa-mobile mx-2"></i>91667792</p>
+					<p class="card-text my-0 ms-2"><i class="fas fa-phone mx-2"></i>24810034</p>
+					<h5 class="card-title text-info mt-1">E-mail</h5>
+					<p class="card-text my-0 ms-2"><i class="fas fa-envelope mx-2"></i>leandropifano@gmail.com</p>
+				</div>
+			</div>
+			<div class="card border-white bg-white bg-opacity-25 mb-5 col col-lg-12 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1500">
+				<div class="card-header border-white fs-5 text-dark text-center"><i class="fas fa-comments mx-2"></i>Un poco de mi</div>
+				<div class="card-body text-center text-white">
+					<p class="card-text my-1">Profesional con cerca de 10 años de experiencia en en el área de las TICs y del IoTs en general.</p>
+					<p class="card-text my-1">Apasionado por la tecnología, la información, las comunicaciones y las sinergias que se generan con el mundo en que se apliquen.</p>
+					<p class="card-text my-1">Abanderado de la filosofía del Software Libre y su sentido de comunidad.</p>
+					<h6 class="bg-dark bg-opacity-50 text-success mt-3 mb-1 py-2">Versátil - Resolutivo - Analítico - Autodidacta</h6>
+					<h6 class="bg-dark bg-opacity-50 text-info mt-0 mb-2 py-2">Software Libre - Scripter - Documentador Técnico - Server Admin</h6>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-----------2nd page END---------------->
+	<!-----------3rd page START---------------->
+	<div id="header_mystudies" class="title text-center bg-dark bg-opacity-75 py-5" data-aos="fade-right" data-aos-duration="2000">
+		<span class="block"></span>
+		<hr class="text-white"><h1 class="text-white"><i class="fa fs-2 fa-graduation-cap mx-5" data-aos="flip-left" data-aos-duration="3000"></i>Formación Académica<i class="fa fs-2 fa-graduation-cap mx-5" data-aos="flip-right" data-aos-duration="3000"></i></h1><hr class="text-white">
 	</div>
+	<section id="section_mystudies" class="m-0 p-0">
+		<div class="d-flex flex-column bg-dark bg-opacity-75 pb-5 w-100 col-lg-12 col-sm-12 col-xs-12">
+			<!------Primary Studies START---------->
+			<div class="card bg-secondary bg-gradient bg-opacity-50 border-primary my-3 ms-5 w-75" data-aos="fade-left" data-aos-duration="1500">
+				<div class="card-header text-white text-opacity-75">
+					Estudios Primarios
+				</div>
+				<div class="card-body pb-0">
+					<ul class="list-group list-group-flush"><h5>1<sup class="fw-normal fst-italic">er</sup> año<i class="fa fa-xs fa-arrow-right text-primary mx-2"></i>4<sup class="fw-normal fst-italic">to</sup> año</h5></ul>
+						<li class="list-group-item mb-2"><span class="fi fi-ar me-3"></span>Escuela Nº 1 “Dr. Antonio Dellepiane”</li>
+					<ul class="list-group list-group-flush"><h5>5<sup class="fw-normal fst-italic">to</sup> año<i class="fa fa-xs fa-arrow-right text-primary mx-2"></i>6<sup class="fw-normal fst-italic">to</sup> año</h5></ul>
+						<li class="list-group-item mb-2"><span class="fi fi-uy me-3"></span>Escuela Nº 13 “Joaquín Mestre”</li>
+					<ul class="list-inline mb-0 mt-1">
+						<li class="list-inline-item"><p class="fs-4 fw-bold">Año de Egreso: <span class="fs-5 fw-light text-info">2004</span></p></li>
+						<li class="list-inline-item w-75"><p class="text-end fs-4 fw-bold">Duración: <span class="fs-5 fw-light text-info">6 años</span></p></li>
+					</ul>
+				</div>
+			</div>
+			<!------Primary Studies END---------->
+			<!------Bachelor Studies START---------->
+			<div class="align-self-end card bg-secondary bg-gradient bg-opacity-50 border-info my-3 me-3 w-75" data-aos="fade-right" data-aos-duration="1500">
+				<div class="card-header text-white text-opacity-75">
+					Estudios Secundarios
+				</div>
+				<div class="card-body pb-0">
+					<ul class="list-group list-group-flush"><h5>1<sup class="fw-normal fst-italic">er</sup> año<i class="fa fa-xs fa-arrow-right text-primary mx-2"></i>3<sup class="fw-normal fst-italic">er</sup> año<span class="fs-5 fw-light text-info"> (CBU - Ciclo Básico Uruguayo)</span></h5></ul>
+						<li class="list-group-item mb-2"><span class="fi fi-uy me-3"></span>Liceo Nº 55 “Luis Hierro Gambardella”</li>
+						<ul class="list-inline mt-1">
+							<li class="list-inline-item"><p class="fs-4 fw-bold">Año de Egreso: <span class="fs-5 fw-light text-info">2007</span></p></li>
+							<li class="list-inline-item w-75"><p class="text-end fs-4 fw-bold">Duración: <span class="fs-5 fw-light text-info">3 años</span></p></li>
+							<hr class="text-dark mt-0 pt-0">
+						</ul>
+					<ul class="list-group list-group-flush"><h5>4<sup class="fw-normal fst-italic">to</sup> año<i class="fa fa-xs fa-arrow-right text-primary mx-2"></i>6<sup class="fw-normal fst-italic">to</sup> año <span class="fs-5 fw-light text-info">(EMT - Educación Media Tecnológica)</span></h5></ul>
+						<li class="list-group-item mb-2"><span class="fi fi-uy me-3"></span>Instituto Tecnológico Superior Buceo</li>
+					<ul class="list-inline mb-0 mt-1">
+						<li class="list-inline-item"><p class="fs-4 fw-bold">Año de Egreso: <span class="fs-5 fw-light text-info">2010</span></p></li>
+						<li class="list-inline-item w-75"><p class="text-end fs-4 fw-bold">Duración: <span class="fs-5 fw-light text-info">3 años</span></p></li>
+					</ul>
+					<h3 class="list-item text-center text-white"><i class="fa fa-2x fa-user-graduate text-dark text-opacity-50 px-2"></i>Titulo Obtenido: <span class="text-danger bg-info rounded text-opacity-75 px-2">Bachiller Tecnológico en Informática</span><i class="fa fa-2x fa-check text-success px-3"></i></h3>
+				</div>
+			</div>
+			<!------Bachelor Studies END---------->
+			<!------Third Studies START----------->
+			<div class="card bg-secondary bg-gradient bg-opacity-50 border-primary my-3 ms-5 w-75" data-aos="fade-left" data-aos-duration="1500">
+				<div class="card-header text-white text-opacity-75">
+					Estudios Terciarios
+				</div>
+				<div class="card-body pb-0">
+					<ul class="list-group list-group-flush"><h5><span class="fs-5 fw-light text-info">Tecnicatura en Redes y Telecomunicaciones</span></h5></ul>
+						<li class="list-group-item mb-2"><span class="fi fi-uy me-3"></span>Instituto Tecnológico Superior Buceo</li>
+					<ul class="list-inline mb-0 mt-1">
+						<li class="list-inline-item"><p class="fs-4 fw-bold">Año de Egreso: <span class="fs-5 fw-light text-info">2012</span></p></li>
+						<li class="list-inline-item w-75"><p class="text-end fs-4 fw-bold">Duración: <span class="fs-5 fw-light text-info">2 años</span></p></li>
+					</ul>
+					<h3 class="list-item text-center text-white"><i class="fa fa-2x fa-user-graduate text-dark text-opacity-50 px-2"></i>Titulo Obtenido: <span class="text-danger bg-info rounded text-opacity-75 px-2">Técnico en Redes y Telecomunicaciones</span><i class="fa fa-2x fa-check text-success px-3"></i></h3>
+				</div>
+			</div>
+			<!------Third Studies END----------->
+			<!------Other Studies START----------->
+			<div class="align-self-center card bg-secondary bg-gradient bg-opacity-50 border-info my-3 ms-5 w-75" data-aos="fade-right" data-aos-duration="1500">
+				<div class="card-header text-white text-opacity-75">
+					Otros Estudios
+				</div>
+				<div class="card-body pb-0">
+					<ul class="list-group list-group-flush"><h5><span class="fs-5 fw-light text-info">Curso de Portugués</span></h5></ul>
+						<li class="list-group-item mb-2"><span class="fi fi-uy me-3"></span>Centro de Lenguas Extranjeras Nº 6</li>
+					<ul class="list-inline mb-0 mt-1">
+						<li class="list-inline-item"><p class="fs-4 fw-bold">Año de Egreso: <span class="fs-5 fw-light text-info">2007</span></p></li>
+						<li class="list-inline-item w-75"><p class="text-end fs-4 fw-bold">Duración: <span class="fs-5 fw-light text-info">3 años</span></p></li>
+					</ul>
+					<h3 class="list-item text-center text-white"><i class="fa fa-2x fa-user-graduate text-dark text-opacity-50 px-2"></i>Titulo Obtenido: <span class="text-danger bg-info rounded text-opacity-75 px-2">Portugués Básico</span><i class="fa fa-2x fa-check text-success px-3"></i></h3>
+				</div>
+			</div>
+			<!------Other Studies END----------->
+			<!------Self-taught Formation START----------->
+			<div class="align-self-left card bg-secondary bg-gradient bg-opacity-50 border-primary my-3 ms-5 w-75" data-aos="fade-left" data-aos-duration="1500">
+				<div class="card-header text-white text-opacity-75">
+					Formación Autodidacta
+				</div>
+				<div class="card-body pb-0">
+					<ul class="list-group list-group-flush"><h5><img class="dev-icon-sm float-start me-1" src="includes/devicon-2.15.1/icons/platzi/platzi_original.svg"/><span class="fs-5 fw-light text-info">Academia Platzi</span></h5></ul>
+						<li class="list-group-item mb-2">Curso Profesional de Git y Github <a class="btn py-0 my-0" href="https://platzi.com/p/lpifano/" target="_blank"><span class="text-success ms-5 ps-5">Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></span></a></li>
+					<ul class="list-group list-group-flush pt-2"><h5><img class="dev-icon-sm float-start me-1" src="includes/devicon-2.15.1/icons/udemy/udemy-original.svg"/><span class="fs-5 fw-light text-info">Academia Udemy</span></h5></ul>
+						<li class="list-group-item mb-2">Ethical Hacking <span class="text-success ms-5 ps-5">En proceso <i class="fas fs-5 fa-clock me-2"></i></span></li>
+					<ul class="list-group list-group-flush pt-2"><h5><img class="dev-icon-sm float-start me-1" src="includes/devicon-2.15.1/icons/linkedin/linkedin-original.svg"/><span class="fs-5 fw-light text-info">Linkedin Learning</span></h5></ul>
+						<table class="mb-2 w-100">
+							<tr>								
+								<td><li class="list-group-item">HTML5 y CSS3 Práctico <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/268e1c4b77756a8293223aacf0d885bffe85cb80c16aa923c7ceb346bc788888?trk=share_certificate" target="_blank"><sup>Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+								<td><li class="list-group-item">React Avanzado <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/fb852691a104f12c6ba068e997962a6b0e46fc2b9c186a4173f7fc428fa542ac?trk=share_certificate" target="_blank"><sup>Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+							</tr>
+							<tr>			
+								<td><li class="list-group-item">CSS Práctico - Maquetado de Landing Page <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/9248f06b3bb80b7d5e24b1db268ce152bccb5e8905b3c5df20d3b737960a7de4?trk=share_certificate" target="_blank"><sup>Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+								<td><li class="list-group-item">CSS con SASS Esencial <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/a0fb5dac53bace04c9bd18277b0b5ea5b098b35b4b308fbb8612466b36ded28c?trk=share_certificate" target="_blank"><sup>Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+							</tr>
+							<tr>															
+								<td><li class="list-group-item">Integración HTML y CSS Avanzado <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/c94fd07d54d8a2458656cf0fb6cf2469cd2b66b4310c4600916b65f9c45150ee?trk=share_certificate" target="_blank"><sup>Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+								<td><li class="list-group-item">DevOps Esencial <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/bdbdc3fefb960fa642da379b21b87913938a0eae06189718640e1e52a6950cbe?trk=share_certificate" target="_blank"><sup>Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+							</tr>
+							<tr>															
+								<td><li class="list-group-item">Semántica Web <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/ae885ce708f4a0989f8adeeceff15a820879af40ca3ed7609d7843b395c1bcfd?trk=share_certificate" target="_blank"><sup>Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+								<td><li class="list-group-item">Docker Esencial <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/1196b6d2365dc0a235f6503504ec0c84cba8b22bfe5739be66e589e3782e216a?trk=share_certificate" target="_blank"><sup>Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+							</tr>
+							<tr>								
+								<td><li class="list-group-item">CSS Avanzado <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/4370794c345cc545253d5c0326faa362d190534f4afdd0dfbbcde6835bba7d61?trk=share_certificate" target="_blank"><sup>Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+								<td><li class="list-group-item">DevOps - Despliegue de microservicios con Docker <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/6d98df3f503f71080d52961d5970ca629e9729410f0366e211b796beb0226674?trk=share_certificate" target="_blank"><sup>Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+							</tr>
+							<tr>							
+								<td><li class="list-group-item">JSON Esencial <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/5ce3d549b0ed84aa75190d174dd9d4a2ca4784a8684e8e173343ade1fbea06b8?trk=share_certificate" target="_blank"><sup>Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+								<td><li class="list-group-item">Kubernetes Esencial - Adminstradores IT <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/de2c3ba187b89b71b0785ae367f916ef262503be0e2a4f975a0ad5b2213f138b?trk=share_certificate" target="_blank"><sup>Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+							</tr>
+							<tr>															
+								<td><li class="list-group-item">Python Esencial <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/5679361ec031c01df704c6bcdedeaa42d83cbf93127eed2930c50d89ab5d001f?trk=share_certificate" target="_blank"><sup>Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+								<td><li class="list-group-item">Kubernetes Esencial - Desarrollo de aplicaciones <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/ad12703db2003c67c2f7b7728c790f036d6d9018e406ee7d8b63967de54cc384?trk=share_certificate" target="_blank"><sup>Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+							</tr>
+							<tr>															
+								<td><li class="list-group-item">React Esencial <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/3cf70307bbdd2b8d95bc4b5a300d4f1ee114338084438fde504fb2393d29bd22?trk=share_certificate" target="_blank"><sup>Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+								<td><li class="list-group-item">Fundamentos de la Ingeniería del Caos <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/8cb93475d95ca2dfd71683f7f62a07b19eb3402ee9fe424f7d932c440e6ab772?trk=share_certificate" target="_blank"><sup class="text-success float-end">Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+							</tr>
+							<tr>							
+								<td><li class="list-group-item">React Hooks Esencial <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/1ed1f9c8033c5db033ba17219414e94b619b6036c2b8c0f8f076018803525b2a?trk=share_certificate" target="_blank"><sup>Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+								<td><li class="list-group-item">Amazon Web Services - Profesionales IT <a class="btn text-success float-end py-0 my-0" href="https://www.linkedin.com/learning/certificates/5a3e2bf2978f115fa771038fbbb7e6d3959f504e4b9e08a1dc36aa11a4177d10?trk=share_certificate" target="_blank"><sup class="text-success float-end">Certificado <i class="fas fs-5 fa-external-link-alt me-2"></i></sup></a></li></td>
+							</tr>																																								
+						</table>
+				</div>
+			</div>
+			<!------Self-taught Formation END----------->
+		</div>
+	</section>
+	<!-----------3rd page END------------------>
+	<!-----------4th page START---------------->
+	<div id="header_myexperiences" class="title text-center py-5" data-aos="flip-left" data-aos-duration="2000">
+		<span class="block"></span>
+		<hr><h1 class="text-dark"><i class="fa fs-2 fa-handshake mx-5" data-aos="fade-right" data-aos-duration="3000"></i>Experiencia Laboral<i class="fa fs-2 fa-handshake mx-5" data-aos="fade-left" data-aos-duration="3000"></i></h1><hr>
+	</div>
+	<section id="section_myexperiences" class="my-0 py-0">
+		<div class="container pb-5 pt-3 col-lg-12 col-sm-12 col-xs-12">
+			<div id="timeline-01" class="col timeline d-none d-xl-inline">
+				<div class="position-relative">
+					<div class="position-absolute top-0 start-100"><i class="icon-start-timeline fs-1 text-primary fa fa-angle-double-down"></i></div>
+				</div>
+				<div class="position-relative top-100 start-100"><i class="icon-end-timeline fs-1 text-primary fa fa-angle-double-down"></i></div>
+				<h3 class="text-white"><sup><i class="point-upleft text-danger fa fa-angle-up me-1"></i></sup>2009</h3><hr class="border border-primary border-3">
+			</div>
+			<div id="timeline-06" class="timeline  d-none d-xl-inline">
+				<hr class="border border-success border-3">
+			</div>
+				<!------MyOwn Work START----------> 
+				<div id="myownwork-01" class="col card bg-white bg-opacity-50 mb-5 me-3 w-75" data-aos="flip-right" data-aos-duration="1500">
+					<div class="card-header text-white">
+						<mark class="text-white bg-danger bg-opacity-50">Perfil Autónomo - Independiente</mark>
+					</div>
+					<div class="card-body text-white py-0 px-0 mx-0">
+						<ul class="list-group list-group-flush px-3"><h5><p class="job_title text-primary bg-dark bg-opacity-50 fs-5 fw-light py-1 ps-2 mb-1"> Técnico TI Particular</p>
+							<span class="fs-6 ms-5">2009<i class="fa fa-arrow-right text-primary mx-2"></i> actualidad</span></h5>
+						</ul>
+						<li class="list-group-item bg-primary bg-opacity-50 text-white mx-3 mb-1">Trabajo independiente referido a brindar soporte técnico, mantenimiento,
+							asesoramiento y solución a diversos asuntos de clientes.</li><hr>
+						<ul class="list-group list-group-flush px-3 pt-0"><h5><p class="job_title text-success bg-dark bg-opacity-50 fs-5 fw-light py-1 ps-2 mt-2 mb-1"> Diseñador y Desarrollador Web</p>
+							<span class="fs-6 ms-5">2015<i class="fa fa-arrow-right text-success mx-2"></i> actualidad</span></h5>
+							<li class="list-group-item bg-success bg-opacity-50 text-white mb-0">Trabajo independiente referido al desarrollo, diseño, migración y/o mantenimiento de sitios web.</li>
+							<li class="list-group-item bg-success bg-opacity-50 mb-0 text-center"><a class="bg-primary bg-gradient border-info rounded text-white p-2 m-1 text-decoration-none" href="http://geipar.udelar.edu.uy" target="_blank">http://geipar.udelar.edu.uy</a></li>
+							<li class="list-group-item bg-success bg-opacity-50 mb-0 text-center"><a class="bg-primary bg-gradient border-info rounded text-white p-2 m-1 text-decoration-none" href="http://ladiner-sa.com" target="_blank">http://ladiner-sa.com</a></li>
+							<li class="list-group-item bg-success bg-opacity-50 mb-3 text-center"><a class="bg-primary bg-gradient border-info rounded text-white p-2 m-1 text-decoration-none" href="http://meditacion-laica.org" target="_blank">http://meditacion-laica.org</a></li>
+						</ul>
+					</div>
+				</div>
+				<!------WyOwn Work END---------->
+				<div id="timeline-02" class="col timeline d-none d-xl-inline">
+					<div class="position-relative">
+						<div class="position-absolute top-0 start-100"><i class="icon-start-timeline fs-2 text-warning fa fa-ellipsis-h"></i></div>
+					</div>
+					<div class="position-relative top-100 start-100"><i class="icon-end-timeline fs-2 text-warning fa fa-minus"></i></div>
+					<h3 class="text-white pe-3"><sup><i class="point-upleft text-danger fa fa-angle-up me-n1"></i></sup>2012</h3><hr class="border border-warning border-3">
+				</div>
+					<!------INTERFASE Work START---------->
+					<div class="col card bg-white bg-opacity-50 mb-5 me-3 w-75" data-aos="flip-right" data-aos-duration="1500">
+						<div class="card-header text-white pb-0">
+							Empresa: Contratado por Interfase S.A.
+						</div>
+						<div class="card-body text-white pb-0 mb-2">
+							<ul class="list-group list-group-flush mt-1 pt-0"><h5><p class="job_title text-warning bg-dark bg-opacity-50 fs-5 text-info fw-light py-1 ps-2 mb-1"> Administrador de Servidores</p>
+								<span class="fs-6 ms-5">Mayo 2012<i class="fa fa-arrow-right text-warning mx-2"></i> Junio 2012</span></h5>
+							</ul>
+							<li class="list-group-item bg-warning bg-opacity-50 text-white mb-2"><p class="my-1">Desempeñando funciones en Ministerio de Vivienda,
+								Ordenamiento Territorial y Medio Ambiente <mark class="text-white bg-danger bg-opacity-50">(MVOTMA)</mark>.</p>
+								<p class="my-1">Tipo de Contrato: Suplencia (45 días).</p>
+								<p class="my-1">Tareas desarrolladas: Administración de servidores Ms Windows y Linux, manejo de
+								respaldos y mantenimiento de los servicios en funcionamiento.</p></li>
+						</div>
+					</div>
+					<!------INTERFASE Work END---------->
+				<div id="timeline-03" class="col timeline d-none d-xl-inline">
+					<div class="position-relative">
+						<div class="position-absolute top-0 start-100"><i class="icon-start-timeline fs-2 text-info fa fa-ellipsis-h"></i></div>
+					</div>
+					<h3 class="text-white pe-2"><sup><i class="text-danger fa fa-angle-up me-n1"></i></sup>2013</h3><hr class="border border-info border-3">
+					<div id="timeline-04" class="timeline d-none d-xl-inline">
+						<div class="position-relative">
+							<div class="position-absolute top-0 start-100"><i class="icon-start-timeline fs-2 text-white fa fa-times ms-n1"></i></div>
+						</div>
+						<div class="position-relative top-100 start-100"><i class="icon-end-timeline fs-2 text-white fa fa-minus"></i></div>
+						<h3 class="text-white pe-2"><sup><i class="text-danger fa fa-angle-up me-n1"></i></sup>2015<sup><i class="point-upright text-danger fa fa-angle-up ms-1"></i></sup></h3><hr class="border border-white border-3">
+					</div>
+					<div id="timeline-05" class="timeline d-none d-xl-inline">
+						<div class="position-relative">
+							<div class="position-absolute top-0 start-100"><i class="icon-start-timeline fs-2 text-success fa fa-ellipsis-h"></i></div>
+						</div>
+						<div class="position-relative top-100 start-100"><i class="icon-end-timeline fs-1 text-success fa fa-angle-double-down"></i></div>
+						<h3 class="text-white pe-2">2019<sup><i class="point-upright text-danger fa fa-angle-up me-1"></i></sup></h3>
+					</div>
+					<h3 class="text-white"><sup><i class="text-danger fa fa-angle-double-left ms-1"></i></sup>HOY<sup><i class="text-danger fa fa-angle-double-right me-1"></i></sup></h3>
+				</div>
+					<!------UDELAR Work START---------->
+					<div class="col card bg-white bg-opacity-50 mb-5 me-3 w-75" data-aos="flip-right" data-aos-duration="1500">
+						<div class="card-header text-white">
+							Facultad de Humanidades y Ciencias de la Educación. <mark class="text-white bg-danger bg-opacity-50">FHCE, UDELAR</mark>
+						</div>
+						<div class="card-body text-white pb-0">
+							<ul class="list-group list-group-flush mb-2"><h5><p class="job_title text-info bg-dark bg-opacity-50 fs-5 fw-light py-1 ps-2 mb-0"> Ayudante Técnico</p>
+								<span class="fs-6 ms-5">Junio 2013<i class="fa fa-arrow-right text-info mx-2"></i> Junio 2015</span></h5>					
+							</ul>
+							<div class="accordion text-dark mb-3" id="accordion_fhucework0">
+								<div class="accordion-item border-primary bg-info bg-opacity-25">
+									<h2 class="accordion-header" id="heading_0">
+									<button class="accordion-button collapsed border-info text-white bg-primary bg-opacity-25" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_0" aria-expanded="false" aria-controls="collapse_0">
+										Soporte TI (nivel 1 y 2)
+									</button>
+									</h2>
+									<div id="collapse_0" class="accordion-collapse collapse" aria-labelledby="heading_0" data-bs-parent="#accordion_fhucework0">
+										<div class="accordion-body bg-secondary bg-opacity-25">
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Referido a funcionarios, docentes y estudiantes.
+												Asistencia a docentes con los equipos presentes en salones. Soporte básico con
+												cañones, computadoras o equipos de audio.</li>
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Instalación, mantenimiento y reparación de equipos para el dictado de clases
+												(Pcs, proyectores, micrófonos, parlantes, pantallas, entre otros). </br>
+												Acondicionamiento y mantenimiento de salas de informática.</li>
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Instalación y control de stock de tóners de impresoras. Seguimiento del stock y
+												armado de los pedidos de tóners.</li>
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Grabación (audio y/o video) de actividades.
+											Manipulación de consolas de sonido y edición de filmación o audio.</li>	
+										</div>
+									</div>
+								</div>
+							</div><hr>
+							<ul class="list-group list-group-flush"><h5><p class="job_title text-info bg-dark bg-opacity-50 fs-5 fw-light py-1 ps-2 mb-0"> Tecnico TI - Administrador de Infraestructura - Server Admin - Web Admin</p>
+							<span class="fs-6 ms-5">Junio 2015<i class="fa fa-arrow-right text-info mx-2"></i> Setiembre 2019</span></h5>
+							</ul>
+							<div class="accordion text-dark mb-3" id="accordion_fhucework">	
+								<div class="accordion-item border-primary bg-info bg-opacity-25">
+									<h2 class="accordion-header" id="heading_2">
+									<button class="accordion-button collapsed border-info text-white bg-primary bg-opacity-25" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
+										Soporte TI (nivel 1, 2 y 3) -- Perfil de AYUDANTE TECNICO + el siguiente detalle de tareas:
+									</button>
+									</h2>
+									<div id="collapse_2" class="accordion-collapse collapse" aria-labelledby="heading_2" data-bs-parent="#accordion_fhucework">
+										<div class="accordion-body bg-secondary bg-opacity-25">
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Soporte sobre las aplicaciones administrativas de UDELAR. Implica el
+												seguimiento y contacto con SeCIU para programas como el expe+, person,
+												personw, chp, siap, siif, hlbrou, hislab, liquidos brou, conga, aleph, SIAP, SGAE,
+												etc.</li>
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Instalación y manejo de equipos de videoconferencia (POLYCOM).</li>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item border-primary bg-info bg-opacity-25">
+									<h2 class="accordion-header" id="heading_3">
+									<button class="accordion-button collapsed border-info text-white bg-primary bg-opacity-25" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
+										Administración de plataformas web
+									</button>
+									</h2>
+									<div id="collapse_3" class="accordion-collapse collapse" aria-labelledby="heading_3" data-bs-parent="#accordion_fhucework">
+										<div class="accordion-body bg-secondary bg-opacity-25">
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Administración de la plataforma EVA (moodle). Creación y mantenimiento de
+												usuarios y cursos, respuesta a consultas vía correo, teléfono o presencial.</br>
+												Asesoramiento sobre el funcionamiento de la plataforma, tanto a estudiantes
+												como docentes.</li>
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Creación del nuevo sitio de GEIPAR (Wordpress). Maquetado, diseño, migración
+												del sitio viejo, mantenimiento y publicación de contenidos. <br>
+												Adaptación de los contenidos para lograr subirlos a los sitios con una mejor
+												navegación o accesibilidad.</li>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item border-primary bg-info bg-opacity-25">
+									<h2 class="accordion-header" id="heading_4">
+									<button class="accordion-button collapsed border-info text-white bg-primary bg-opacity-25" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+										Administración de la infraestructura de red
+									</button>
+									</h2>
+									<div id="collapse_4" class="accordion-collapse collapse" aria-labelledby="heading_4" data-bs-parent="#accordion_fhucework">
+										<div class="accordion-body bg-secondary bg-opacity-25">
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Relevamiento constante de la infraestructura de red.</li>
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Mantenimiento del cableado. Reparación de cables o terminales de red.</li>
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Reestructura de la infraestructura de red.</li>
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Reemplazo de switches “tontos” por administrables en los nodos principales de
+												conectividad. Implementación de VLANS.</li>
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Tendido de cables troncales o enlaces principales.</li>
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Mantenimiento y replanteo de la red inalámbrica (wi-fi).</li>
+											<li class="list-group-item bg-success bg-opacity-25 text-white ms-5 fw-lighter lh-1"><strong>Switches</strong><br>
+												TP-LINK
+												TL-SL3452, TL-SG3216, TL-SL3428, T2600G-28TS<br>
+												HP 1920 JL382A
+											</li>
+											<li class="list-group-item bg-success bg-opacity-25 text-white ms-5 fw-lighter lh-1"><strong>Routers</strong><br>
+												TP-LINK, Linksys, Intellinet
+											</li>
+											<li class="list-group-item bg-success bg-opacity-25 text-white ms-5 fw-lighter lh-1"><strong>Impresoras-Multifuncion</strong><br>
+												Kyocera	KM-2640, KM-2810, KM-2820, M2035dn, 2640idw, FS-4200dn <br>
+												Brother MFC-j6730 DW
+											</li>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item border-primary bg-info bg-opacity-25">
+									<h2 class="accordion-header" id="heading_5">
+										<button class="accordion-button collapsed border-info text-white bg-primary bg-opacity-25" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+											Administración de Servidores
+										</button>
+									</h2>
+									<div id="collapse_5" class="accordion-collapse collapse" aria-labelledby="heading_5" data-bs-parent="#accordion_fhucework">
+										<div class="accordion-body bg-secondary bg-opacity-25">
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3"><strong>Servidores físicos</strong> </br>
+												Correo institucional (Zimbra)</br>
+												EVA (moodle), EVA viejo (archivo de cursos antiguos)</br>
+												SIIF (copia de software local)</br>
+												DNS</br>
+												Contenedor de maquinas virtuales (DELL)</li>
+												<li class="list-group-item bg-info bg-opacity-25 text-white ms-3"><strong>Servidores virtuales</strong> </br>
+													Portal de FHUCE</br>
+													CMS (Servidores de manejadores de contenido): Joomla, OMEKA, OJS, ATOM, Wordpress</br>
+													Servidores de respaldo NAS: Lenovo, Western Digital, FreeNAS</li>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item border-primary bg-info bg-opacity-25">
+									<h2 class="accordion-header" id="heading_6">
+										<button class="accordion-button collapsed border-info text-white bg-primary bg-opacity-25" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_6" aria-expanded="false" aria-controls="collapse_6">
+											Investigación y políticas de seguridad
+										</button>
+									</h2>
+									<div id="collapse_6" class="accordion-collapse collapse" aria-labelledby="heading_6" data-bs-parent="#accordion_fhucework">
+										<div class="accordion-body bg-secondary bg-opacity-25">
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Relevamiento y seguimiento de inventarios de equipos (GLPI).</li>
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Migración de aplicaciones administrativas, de uso nativo en sistemas MS Windows, a ambientes Linux (expe+, hlbrou, c2, etc.).</li>
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Creación y mantenimiento de una wiki (sitio de documentación) propia de la	UMTEC.</li>
+											<li class="list-group-item bg-info bg-opacity-25 text-white ms-3">Contacto con otras áreas de informática, tanto de la UDELAR como externas a la misma, para recopilar información de utilidad y solicitar apoyo en procesos.</li>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!------UDELAR Work END---------->
+		</div>
+	</section>
+	<!-----------4th page END---------------->
+	<!-----------5th page START---------------->
+	<div id="header_myskills" class="title text-center py-5 bg-dark bg-opacity-75" data-aos="zoom-out" data-aos-duration="2000">
+		<span class="block"></span>
+		<hr class="text-white"><h1 class="text-white"><i class="fa fs-2 fa-brain mx-5" data-aos="zoom-in" data-aos-duration="3000"></i>Perfiles Técnicos<i class="fa fs-2 fa-brain mx-5" data-aos="zoom-in" data-aos-duration="3000"></i></h1><hr class="text-white">
+	</div>
+	<section id="section_myskills">
+		<div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<!-----------DEVELOPMPENT---------------->
+			<div class="mx-0 px-0 col col-lg-4 col-md-4 col-sm-4 col-md-4 col-xs-4">
+				<div id="card-develop" class="card-skills card border-primary bg-dark ms-4" data-aos="zoom-out-right" data-aos-duration="2500">
+					<div class="card-header border-primary fs-5 text-primary text-center px-0 pt-1">
+						<h3 class="text-center mb-1">Desarrollo</h3>
+						<sup class="fw-lighter pe-2">Junior<i class="fas fa-xs fa-arrow-right text-secondary mx-0"></i>Mid-level</sup><i class="fas fa-laptop-code text-secondary mx-1"></i>Developer<i class="fas fa-laptop-code text-secondary mx-1"></i>
+					</div>
+					<div class="card-body text-white lh-lg">
+						<h5 class="card-title text-center text-primary">Ambiente Cliente-Servidor</h5>
+						<i class="fs-2 devicon-dot-net-plain colored float-start me-1"></i><p class="card-text my-0 pb-1">Visual Basic .Net<span class="fs-6 fw-light text-secondary"> (VB.NET)</span></p>
+						<i class="fab fs-4 fa-microsoft float-start text-info me-2"></i><p class="card-text my-0">ASP</p>
+						<i class="fs-3 devicon-cplusplus-plain float-start text-secondary me-1"></i><p class="card-text my-0 pb-1">C - C++</p>
+						<img class="dev-icon-sm float-start me-1" src="includes/devicon-2.15.1/icons/python/python-original.svg"/><p class="card-text my-0 pb-1">Python</p>
+						<hr class="text-primary mt-1 mb-2">
+						<h5 class="card-title text-center text-primary">Frontend / Backend</h5>
+						<img class="dev-icon float-start me-1" src="includes/devicon-2.15.1/icons/php/php-original.svg"/><p class="card-text my-0 pt-1">PHP</p>						
+						<i class="fab fs-3 fa-js float-start text-warning me-2"></i><p class="card-text my-0 pb-1">Javascript<span class="fs-6 fw-light text-secondary"> (+ES6)</span></p>
+						<img class="dev-icon-sm float-start me-1" src="includes/devicon-2.15.1/icons/typescript/typescript-original.svg"/><p class="card-text my-0 pt-1">TypeScript</p>
+						<hr class="text-primary my-3">
+						<div>
+							<h5 class="card-title text-primary mt-1">&emsp;&emsp;Metodologías - Arquitecturas</h5>
+							<p class="card-text text-center my-0 ms-5"><span class="fs-6 fw-lighter text-secondary"><i class="fas fa-check px-1"></i>Modelo Vista Controlador</span></p>
+							<p class="card-text my-0 ms-5"><span class="fs-6 fw-lighter text-secondary">&emsp;&emsp;<i class="fas fa-check px-1"></i>POO &emsp;&emsp; &emsp;&emsp; <i class="fas fa-check px-1"></i>SPA &emsp;&emsp; &emsp;&emsp; <i class="fas fa-check px-1"></i>RESTful</span></p>
+						</div>
+						<hr class="text-primary mt-3 mb-3">
+						<div class="ps-5">
+							<sup class="fas fa-flip-horizontal float-start"><i class="fas fa-cog fa-spin text-secondary mt-1"></i></sup>
+							<i class="fas fs-4 fa-cog fa-spin float-start text-secondary me-1"></i><p class="card-text text-primary fw-bold ms-3 mt-3 mb-0">Estudiando - Incorporando
+							<i class="fas fa-sm fa-upload text-success text-opacity-75 me-0 ms-2"></i><sup><i class="fas fs-6 fa-brain text-white text-opacity-50 ms-0"></i></sup><i class="fas fa-sm fa-upload text-primary text-opacity-75 ms-0"></i></p>
+							<p class="card-text mt-4 py-0 ms-5"><span class="fs-6 fw-lighter text-secondary">
+								<i class="fs-2 devicon-nodejs-plain colored float-start me-1 pt-1"></i>NodeJS
+								<img class="dev-icon-sm ms-3 me-1" src="includes/devicon-2.15.1/icons/angularjs/angularjs-original.svg"/>Angular
+								<i class="fab fs-3 fa-react text-info ms-3 me-1 pt-1"></i>React.js
+							</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-----------INFRA--------------->
+			<div class="mx-0 px-0 col col-lg-4 col-md-4 col-sm-4 col-xs-4">
+				<div id="card-infra" class="card-skills card border-success bg-dark" data-aos="zoom-out-down" data-aos-duration="2000">
+					<div class="card-header border-success fs-5 text-success text-center px-0 pt-1">
+						<h3 class="text-center mb-1">Infraestructura</h3>
+						&emsp;&emsp;&emsp;<sup class="fw-lighter pe-2 ms-5">Senior</sup><i class="fas fa-tools text-secondary mx-1"></i>IT-IoTs Support<i class="fas fa-tools text-secondary mx-1"></i><br>
+						<sup class="fw-lighter pe-2">Mid-level<i class="fas fa-xs fa-arrow-right text-secondary mx-0"></i>Semi-Senior</sup><i class="fas fa-sm fa-server text-secondary mx-0"></i><sup><i class="fas fa-1x fa-user-secret text-secondary text-opacity-75 me-1"></i></sup>Admin Server<sup><i class="fas fa-1x fa-user-secret text-secondary text-opacity-75 ms-1"></i></sup><i class="fas fa-sm fa-server text-secondary mx-0"></i><br>
+						&emsp;&emsp;<sup class="fw-lighter pe-2 ms-5">Trainee<i class="fas fa-xs fa-arrow-right text-secondary mx-0"></i>Junior</sup><i class="fas fa-sm fa-layer-group text-secondary mx-0"></i><sup><i class="fas fa-xs fa-microchip text-secondary text-opacity-75 mx-0"></i></sup>&emsp;DevOps&emsp;<sup><i class="fas fa-xs fa-microchip text-secondary text-opacity-75 mx-0"></i></sup><i class="fas fa-sm fa-layer-group text-secondary mx-0"></i>
+					</div>
+					<div class="card-body text-white">
+						<h5 class="card-title text-center text-success">Sistemas Operativos <span class="fs-6 fw-lighter">(configuración, soporte y uso)</span></h5>
+						<table class="text-center w-100">
+							<th class="pt-2 pb-1">
+								<i class="fs-4 devicon-windows8-original colored me-2"></i>
+								Microsoft Windows
+							</th>
+							<tr class="fs-6 fw-light text-secondary">
+								<td class="text-center pb-2"><img class="dev-icon-sm me-1 pb-1" src="includes/devicon-2.15.1/icons/windows-xp/windows-xp-original.svg"/>Xp &emsp; <img class="dev-icon-sm me-1 pb-1" src="includes/devicon-2.15.1/icons/windows-vista/windows-vista-original.svg"/>Vista &emsp;<img class="dev-icon-sm me-1 pb-1" src="includes/devicon-2.15.1/icons/windows-seven/windows-seven-original.svg"/> Seven &emsp;<i class="fs-4 devicon-windows8-original colored me-1"></i> 10</td> 
+							</tr>
+						</table>
+						<hr class="text-success my-1">
+						<table class="text-center w-100">
+							<th class="text-end pt-2">
+								<img class="dev-icon-sm me-1" src="includes/devicon-2.15.1/icons/linux/linux-original.svg"/>
+							</th>
+							<th class="text-start pt-2">
+								Linux Desktop
+							</th>
+							<th></th>
+							<th></th>
+							<tr class="fs-6 fw-light text-secondary">
+								<td><img class="dev-icon float-start ms-2 me-1 px-0 pt-2" src="includes/devicon-2.15.1/icons/linux-mint/linux-mint-original.svg"/><p class="float-start pt-3"> Linux Mint</p></td>
+								<td><i class="fs-4 devicon-ubuntu-plain colored"></i> Ubuntu</td>
+								<td><i class="fs-4 devicon-debian-plain colored"></i> Debian &nbsp;</td>
+								<td><i class="fs-4 devicon-fedora-plain colored"></i> Fedora &nbsp;</td>
+							</tr>
+						</table>
+						<hr class="text-success my-1">
+						<table class="text-center w-100">
+							<th class="text-end pt-2">
+								<img class="dev-icon-sm me-1" src="includes/devicon-2.15.1/icons/linux/linux-original.svg"/>
+							</th>
+							<th class="text-start pt-2">
+								Linux Server
+							</th>
+							<th></th>
+							<th></th>
+							<tr class="fs-6 fw-light text-secondary">
+								<td class="pt-2 pb-3"><i class="fs-3 devicon-ubuntu-plain colored"></i> Ubuntu</td>
+								<td class="pb-2"><i class="fs-3 devicon-debian-plain colored"></i> Debian</td>
+								<td><img class="dev-icon float-start pt-1" src="includes/devicon-2.15.1/icons/redhat/redhat-original.svg"/><p class="float-start pt-3"> Red Hat</p></td>
+								<td><img class="dev-icon float-start pt-1" src="includes/devicon-2.15.1/icons/centos/centos-original.svg"/><p class="float-start pt-3"> CentOS</p></td>
+							</tr>		
+						</table>
+						<hr class="text-success my-1">
+						<table class="text-center w-100">
+							<th class="pt-2 pb-1">
+								<i class="fs-4 devicon-apple-original me-2"></i>
+								Mac OS
+							</th>
+							<tr class="fs-6 fw-light text-secondary">
+								<td class="text-center pb-2">10.14 (Mojave) ~ 12.2.1 (Monterey)</td> 
+							</tr>
+						</table>
+						<h5 class="card-title bg-secondary bg-opacity-25 text-success rounded-top mt-1 mb-0 py-1">&emsp;&emsp;Herramientas</h5>
+						<table class="table table-borderless rounded-bottom bg-success bg-opacity-25 text-center text-white w-100">
+							<tr class="text-start">
+								<!--td class="px-0 mx-0"></td>
+								<td class="px-0 mx-0"></td-->
+								<td class="px-0 mx-0"><i class="text-danger text-opacity-75 fw-bold fs-1 devicon-apache-line-wordmark ps-1"></i></td>
+								<td class="px-0 mx-0"><img class="dev-icon-lg" src="includes/devicon-2.15.1/icons/docker/docker-original-wordmark.svg"/></td>
+								<td class="px-0 mx-0"><img class="dev-icon-lg" src="includes/devicon-2.15.1/icons/moodle/moodle-original-wordmark.svg"/></td>
+								<td class="px-0 mx-0"><img class="dev-icon-lg" src="includes/devicon-2.15.1/icons/glpi/glpi-original.svg"/></td>
+								<td class="px-0 mx-0"><img class="dev-icon-lg" src="includes/devicon-2.15.1/icons/aws/aws-original.svg"/></td>
+								<td class="px-0 mx-0"><img class="dev-icon-lg" src="includes/devicon-2.15.1/icons/mobaXterm/mobaxterm-original.svg"/></td>
+							</tr>
+							<tr>
+								<td class="px-0 mx-0"><img class="dev-icon-lg" src="includes/devicon-2.15.1/icons/zimbra/zimbra-original.svg"/></td>
+								<td class="px-0 mx-0"><i class="fs-1 devicon-kubernetes-plain-wordmark colored"></i></td>
+								<td class="px-0 mx-0"><img class="dev-icon-lg" src="includes/devicon-2.15.1/icons/nagios/nagios-original.svg"/></td>
+								<td class="px-0 mx-0"><i class="fs-1 devicon-nginx-plain colored"></i></td>
+								<td class="px-0 mx-0"><img class="dev-icon-lg" src="includes/devicon-2.15.1/icons/virtualbox/virtualbox-original.svg"/></td>
+								<td class="px-0 mx-0"><img class="dev-icon-lg" src="includes/devicon-2.15.1/icons/vmware/vmware-original.svg"/></td>
+							</tr>
+						</table>
+						<h5 class="card-title text-success mt-1">&emsp;&emsp;Metodologías Estudiadas</h5>
+						<p class="card-text my-0 ms-5"><span class="fs-6 fw-lighter text-secondary">&emsp;&emsp;<i class="fas fa-check px-1"></i>Ingeniería del Caos &emsp;&emsp;&emsp;&emsp;<i class="fas fa-check px-1"></i>12 Factor Apps</span></p>
+						<p class="card-text text-center my-0 ms-5"><span class="fs-6 fw-lighter text-secondary"><i class="fas fa-check px-1"></i>Ethical Hacking</span></p>
+					</div>
+				</div>
+			</div>
+			<!-----------DESIGN---------------->
+			<div class="mx-0 px-0 col col-lg-4 col-md-4 col-sm-4 col-md-4 col-xs-4">
+				<div id="card-desing" class="card-skills card border-info bg-dark" data-aos="zoom-out-left" data-aos-duration="2500">
+					<div class="card-header border-info fs-5 text-info text-center px-0 pt-1">
+						<h3 class="text-center mb-1">Diseño web</h3>
+						<sup class="fw-lighter pe-2">Mid-level<i class="fas fa-xs fa-arrow-right text-secondary mx-0"></i>Semi-Senior</sup><i class="far fa-object-group text-secondary mx-1"></i>&emsp;Web Designer&emsp;<i class="far fa-object-group text-secondary mx-1"></i><br>
+						&emsp;&emsp;&emsp;<sup class="fw-lighter pe-2 ms-5">Junior</sup><i class="fas fa-laptop-code text-secondary mx-1"></i>Frontend Developer<i class="fas fa-laptop-code text-secondary mx-1"></i>
+					</div>
+					<div class="card-body text-white">
+						<h5 class="card-title text-center text-info mb-2">Maquetado - UI / UX</h5>
+						<table class="w-100">
+							<tr>
+								<td class="ps-2"><img class="dev-icon-sm float-start me-1" src="includes/devicon-2.15.1/icons/html5/html5-original.svg"/><p class="card-text pt-1">HTML - HTML5</p></td>
+								<td class="ps-1"><i class="fab fs-4 fa-css3-alt float-start text-info text-opacity-75 me-1"></i><p class="card-text">CSS - CSS3</p></td>
+								<td class="pb-1"><i class="fs-2 devicon-wordpress-plain float-start me-1"></i><p class="card-text pt-1">Wordpress</p></td>
+							</tr>
+							<tr>
+								<td class="pt-4"><img class="dev-icon-sm float-start me-1" src="includes/devicon-2.15.1/icons/bootstrap/bootstrap-original.svg"/><p class="card-text pt-1">Bootstrap</p></td>
+								<td class="pt-4"><i class="fs-3 devicon-jquery-plain colored float-start me-1"></i><p class="card-text pt-1">jQuery</p></td>
+								<td class="pt-4"><img class="dev-icon-sm float-start me-1" src="includes/devicon-2.15.1/icons/figma/figma-original.svg"/><p class="card-text float-start pt-1">Figma</p></td>
+							</tr>
+						</table>
+						<hr class="text-info my-3">
+						<h5 class="card-title text-info mb-3 ms-5">Diseño</h5>
+						<table class="w-100">
+							<tr>
+								<td class="ps-3"><img class="dev-icon float-start me-1" src="includes/devicon-2.15.1/icons/gimp/gimp-original.svg"/><p class="card-text pt-2">Gimp</p></td>
+								<td class="ps-4"><i class="bi fs-4 bi-file-pdf float-start text-warning text-opacity-75 me-1"></i><p class="card-text pt-2">Fireworks</p></td>
+							</tr>
+							<tr>
+								<td><i class="fs-2 devicon-photoshop-line colored float-start me-1"></i><p class="card-text pt-1">Photoshop</p></td>
+								<td class="ps-5 pt-3"><i class="fs-2 devicon-illustrator-line colored float-start me-1"></i><p class="card-text pt-1">Illustrator</p></td>
+							</tr>
+						</table>
+						<hr class="text-info my-3">
+						<div class="ps-5 pt-2">
+
+							<sup class="fas fa-flip-horizontal float-start"><i class="fas fa-cog fa-spin text-secondary mt-1"></i></sup>
+							<i class="fas fs-4 fa-cog fa-spin float-start text-secondary me-1"></i><p class="card-text text-info fw-bold ms-3 mb-0">Estudiando - Incorporando
+							<i class="fas fa-sm fa-upload text-success text-opacity-75 me-0 ms-2"></i><sup><i class="fas fs-6 fa-brain text-white text-opacity-50 ms-0"></i></sup><i class="fas fa-sm fa-upload text-info text-opacity-75 ms-0"></i></p>
+							
+							<p class="card-text mt-4 ms-5 mb-4"><i class="fs-1 devicon-sass-original colored float-start me-1"></i>
+								<span class="fs-6 fw-lighter text-secondary">SASS / SCSS</span>
+							</p>
+							<p class="card-text mt-4 ms-5"><i class="fs-1 devicon-angularjs-plain float-start me-1"></i>
+								<span class="fs-6 fw-lighter text-secondary">Angular Material</span>
+							</p>
+							<p class="card-text mt-4 ms-5"><i class="fs-1 devicon-materialui-plain colored float-start me-1"></i>
+								<span class="fs-6 fw-lighter text-secondary">Material UI</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------OTHERS---------------->
+		<div class="row justify-content-center mb-5">
+			<div id="card-other" class="card-skills card border-danger bg-dark w-75" data-aos="zoom-out-up" data-aos-duration="2500">
+				<div class="card-header border-danger fs-5 text-danger text-center px-0 pt-1">
+					<h3 class="text-center mb-1">Otros</h3>
+				</div>
+				<div class="card-body text-white">
+					<table>
+						<tr>
+							<td class="text-center">
+								<h5 class="text-danger mb-0 mt-3 pt-1"><i class="fas fa-sm fa-database text-secondary mx-0"></i><sup><i class="fas fa-xs fa-search text-secondary text-opacity-75 mx-0"></i></sup>Analista de Datos - DBA<sup><i class="fas fa-xs fa-flip-horizontal fa-search text-secondary text-opacity-75 mx-0"></i></sup><i class="fas fa-sm fa-database text-secondary mx-0"></i></h5>
+								<p class="card-text text-start my-0 ms-5"><sup class="text-danger fw-lighter pe-2">Trainee<i class="fas fa-xs fa-arrow-right text-secondary mx-0"></i>Junior</sup></p>
+								<p class="card-text my-0 ms-3">
+									<img class="dev-icon-lg me-1" src="includes/devicon-2.15.1/icons/mysql/mysql-original-wordmark.svg"/>&emsp;
+									<img class="dev-icon-lg me-1" src="includes/devicon-2.15.1/icons/mongodb/mongodb-plain-wordmark.svg"/>&emsp;
+									<img class="dev-icon-lg" src="includes/devicon-2.15.1/icons/informix/informix-original.svg"/>
+								</p>
+								<p class="card-text my-0 ms-3">SQL / JSON / scripting</p>
+							</td>
+							<td class="w-25"></td>
+							<td class="text-center">
+								<h5 class="text-danger mt-0 pt-0"><i class="fas fa-sm fa-globe-americas text-secondary me-1"></i>Idiomas<i class="fas fa-sm fa-globe-africa text-secondary ms-1"></i></h5>
+								<p class="card-text my-0 ms-3"><span class="fi fi-us mx-2"></span>Inglés <span class="fs-6 fw-lighter text-secondary"> (Nivel Básico - Oral y Escrito)</span></p>
+								<p class="card-text my-0 ms-3"><span class="fi fi-br mx-2"></span>Portugués <span class="fs-6 fw-lighter text-secondary"> (Nivel Intermedio - Oral y Escrito)</span></p>
+							</td>
+						</tr>
+					</table>
+					<div class="d-flex justify-content-center text-center mt-4 mb-0">
+						<div class="bg-secondary border rounded border-dark bg-opacity-50 px-2 pt-1 min-vw-25">
+							<img class="dev-icon-lg me-1" src="includes/devicon-2.15.1/icons/dbeaver/dbeaver-original.svg"/>&emsp;
+							<img class="dev-icon-lg me-1" src="includes/devicon-2.15.1/icons/gsuite/gsuite-original.svg"/>&emsp;
+							<img class="dev-icon-lg me-1" src="includes/devicon-2.15.1/icons/msoffice/msoffice-original.svg"/>&emsp;
+							<img class="dev-icon-lg me-1 mb-1" src="includes/devicon-2.15.1/icons/git/git-plain-wordmark.svg"/>&emsp;
+							<sub><i class="fs-2 me-1 devicon-github-original-wordmark"></i></sub>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-----------5th page END---------------->
+	<footer class="text-light text-center p-2 min-vw-100">
+		Leandro Pifano - Resumen Personal / Profesional
+	</footer>
 </body>
 </html>
