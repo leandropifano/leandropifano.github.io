@@ -1,12 +1,19 @@
 document.addEventListener("DOMContentLoaded", (event) => {
+    //LOADER WRAPPER----------------------------------------------------------------------------
+    //el loader esta visible y lo oculto cuando la pagina esta cargada
+    document.getElementById("loader-wrapper").style.opacity = "0";
+    document.getElementById("loader-wrapper").style.zIndex = "-10";
+    //------------------------------------------------------------------------------------------
+
     //Inicializo AOS:
     AOS.init();
 
-    //Inicializo Tooltips
+    //Inicializo Tooltips-----------------------------------------------------------------------
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
     })
+    //------------------------------------------------------------------------------------------
 
     //Crear typed js:
     const typed = document.getElementById('span_typed');
@@ -23,7 +30,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 });
 
-window.onload = function() {
+window.onload = function() {    
     try {
         TagCanvas.initial=[0.2,-0.05];
         TagCanvas.minSpeed=0.1;

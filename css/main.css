@@ -11,6 +11,31 @@
 .tooltip-inner {
     max-width: 500px !important;
 }
+
+a i[data-bs-toggle="tooltip"]{
+    z-index: 1000;
+}
+
+.loader-wrapper {
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1.5s ease;
+  }
+  .loader {
+    display: fixed;
+    position: relative;
+    color: white;
+    text-shadow: 0 0 2px #00c, 0 0 3px #00f, 0 0 4px #00f, 0 0 3px #aaf, 0 0 6px #aaf, 0 0 8px #aaf;
+  }
+
 .myname h1{
     font: 100 75px/1.2 "Garamond";
     text-shadow: 0 0 2px #00c, 0 0 3px #00f, 0 0 4px #00f, 0 0 3px #aaf, 0 0 6px #aaf, 0 0 8px #aaf;
@@ -29,6 +54,8 @@ html{
     padding: 60px 0 30px 0;
 }
 #navbar {
+    position: fixed;
+    right: 98.7%;
     width: 22px;
     height: 100%;
     background: #333;
