@@ -46,8 +46,8 @@
 	</nav>
 	<!-----------1st page START------------------>
 	<section id="section_header" class="d-flex flex-row align-items-center justify-content-center bg-dark bg-gradient text-white text-center min-vh-100 m-0 p-0">
-		<img id="header_img" src="media/yo.png" class="img-fluid align-self-end w-25" alt="...">
-		<div class="box mb-5 mt-0 pt-0">
+		<img id="header_img" src="media/yo.png" class="img-fluid align-self-end w-25 col-lg-3 col-sm-3 col-md-4 col-xs-4" alt="...">
+		<div class="box mb-5 mt-0 pt-0 col-lg-6 col-sm-6 col-md-4 col-xs-4">
 			<div class="myname mt-0">
 				<span class="block"></span>
 				<h1 class="text-white">Leandro Pifano Herrera</h1>
@@ -63,9 +63,9 @@
 			</div>
 		</div>
 
-		<div id="myCanvasContainer" class="align-self-end m-0 p-0 me-2">
-			<canvas width="300" height="300" id="myCanvas">
-			 <p>In Internet Explorer versions up to 8, things inside the canvas are inaccessible!</p>
+		<div id="myCanvasContainer" class="align-self-end m-0 p-0 me-2 col-lg-3 col-sm-3 col-md-4 col-xs-4">
+			<canvas width="320" height="320" id="myCanvas">
+			 <p>Contenido no disponible, verifique compatibilidad con el navegador</p>
 			</canvas>
 		</div>
 		   
@@ -313,10 +313,10 @@
 				<!------WyOwn Work END---------->
 				<div id="timeline-02" class="col timeline d-none d-xl-inline">
 					<div class="position-relative">
-						<div class="position-absolute top-0 start-100"><i class="icon-start-timeline fs-2 text-warning fa fa-ellipsis-h"></i></div>
+						<div class="position-absolute top-0 start-100"><i class="icon-start-timeline fs-2 text-4color fa fa-ellipsis-h"></i></div>
 					</div>
-					<div class="position-relative top-100 start-100"><i class="icon-end-timeline fs-2 text-warning fa fa-minus"></i></div>
-					<h3 class="text-white pe-3"><sup><i class="point-upleft text-danger fa fa-angle-up me-n1"></i></sup>2012</h3><hr class="border border-warning border-3">
+					<div class="position-relative top-100 start-100"><i class="icon-end-timeline fs-2 text-4color fa fa-minus"></i></div>
+					<h3 class="text-white pe-3"><sup><i class="point-upleft text-danger fa fa-angle-up me-n1"></i></sup>2012</h3><hr class="border border-danger opacity-25 border-3">
 				</div>
 					<!------INTERFASE Work START---------->
 					<div class="col card bg-white bg-opacity-50 mb-5 me-3 w-75" data-aos="flip-right" data-aos-duration="1500">
@@ -324,10 +324,10 @@
 							Empresa: Contratado por Interfase S.A.
 						</div>
 						<div class="card-body text-white pb-0 mb-2">
-							<ul class="list-group list-group-flush mt-1 pt-0"><h5><p class="job_title text-warning bg-dark bg-opacity-50 fs-5 text-info fw-light py-1 ps-2 mb-1"> Administrador de Servidores</p>
-								<span class="fs-6 ms-5">Mayo 2012<i class="fa fa-arrow-right text-warning mx-2"></i> Junio 2012</span></h5>
+							<ul class="list-group list-group-flush mt-1 pt-0"><h5><p class="job_title text-4color bg-dark bg-opacity-50 fs-5 fw-light py-1 ps-2 mb-1"> Administrador de Servidores</p>
+								<span class="fs-6 ms-5">Mayo 2012<i class="fa fa-arrow-right text-4color mx-2"></i> Junio 2012</span></h5>
 							</ul>
-							<li class="list-group-item bg-warning bg-opacity-50 text-white mb-2"><p class="my-1">Desempeñando funciones en Ministerio de Vivienda,
+							<li id="jobD_interfase" class="list-group-item bg-4color text-white mb-2"><p class="my-1">Desempeñando funciones en Ministerio de Vivienda,
 								Ordenamiento Territorial y Medio Ambiente <mark class="text-white bg-danger bg-opacity-50">(MVOTMA)</mark>.</p>
 								<p class="my-1">Tipo de Contrato: Suplencia (45 días).</p>
 								<p class="my-1">Tareas desarrolladas: Administración de servidores Ms Windows y Linux, manejo de
@@ -694,16 +694,16 @@
 		</div>
 		<!-------------OTHERS---------------->
 		<div class="row justify-content-center mb-5">
-			<div id="card-other" class="card-skills card border-danger bg-dark w-75" data-aos="zoom-out-up" data-aos-duration="2500">
-				<div class="card-header border-danger fs-5 text-danger text-center px-0 pt-1">
+			<div id="card-other" class="card-skills card border-4color bg-dark w-75" data-aos="zoom-out-up" data-aos-duration="2500">
+				<div class="card-header border-4color fs-5 text-4color text-center px-0 pt-1">
 					<h3 class="text-center mb-1">Otros</h3>
 				</div>
 				<div class="card-body text-white">
 					<table>
 						<tr>
 							<td class="text-center">
-								<h5 class="text-danger mb-0 mt-3 pt-1"><i class="fas fa-sm fa-database text-secondary mx-0"></i><sup><i class="fas fa-xs fa-search text-secondary text-opacity-75 mx-0"></i></sup>Analista de Datos - DBA<sup><i class="fas fa-xs fa-flip-horizontal fa-search text-secondary text-opacity-75 mx-0"></i></sup><i class="fas fa-sm fa-database text-secondary mx-0"></i></h5>
-								<p class="card-text text-start my-0 ms-5"><sup class="text-danger fw-lighter pe-2">Trainee<i class="fas fa-xs fa-arrow-right text-secondary mx-0"></i>Junior</sup></p>
+								<h5 class="text-4color mb-0 mt-3 pt-1"><i class="fas fa-sm fa-database text-secondary mx-0"></i><sup><i class="fas fa-xs fa-search text-secondary text-opacity-75 mx-0"></i></sup>Analista de Datos - DBA<sup><i class="fas fa-xs fa-flip-horizontal fa-search text-secondary text-opacity-75 mx-0"></i></sup><i class="fas fa-sm fa-database text-secondary mx-0"></i></h5>
+								<p class="card-text text-start my-0 ms-5"><sup class="text-4color fw-lighter pe-2">Trainee<i class="fas fa-xs fa-arrow-right text-secondary mx-0"></i>Junior</sup></p>
 								<p class="card-text my-0 ms-3">
 									<img class="dev-icon-lg me-1" src="includes/devicon-2.15.1/icons/mysql/mysql-original-wordmark.svg"/>&emsp;
 									<img class="dev-icon-lg me-1" src="includes/devicon-2.15.1/icons/mongodb/mongodb-plain-wordmark.svg"/>&emsp;
@@ -713,7 +713,7 @@
 							</td>
 							<td class="w-25"></td>
 							<td class="text-center">
-								<h5 class="text-danger mt-0 pt-0"><i class="fas fa-sm fa-globe-americas text-secondary me-1"></i>Idiomas<i class="fas fa-sm fa-globe-africa text-secondary ms-1"></i></h5>
+								<h5 class="text-4color mt-0 pt-0"><i class="fas fa-sm fa-globe-americas text-secondary me-1"></i>Idiomas<i class="fas fa-sm fa-globe-africa text-secondary ms-1"></i></h5>
 								<p class="card-text my-0 ms-3"><span class="fi fi-us mx-2"></span>Inglés <span class="fs-6 fw-lighter text-secondary"> (Nivel Básico - Oral y Escrito)</span></p>
 								<p class="card-text my-0 ms-3"><span class="fi fi-br mx-2"></span>Portugués <span class="fs-6 fw-lighter text-secondary"> (Nivel Intermedio - Oral y Escrito)</span></p>
 							</td>

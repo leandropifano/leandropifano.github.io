@@ -2,7 +2,7 @@
 function loading(){
     //el loader esta visible y lo oculto cuando la pagina esta cargada
     document.getElementById("loader-wrapper").style.opacity = "0";
-    document.getElementById("loader-wrapper").style.zIndex = "0";
+    document.getElementById("loader-wrapper").style.zIndex = "-10";
 }
 //Agrego el listener
 window.addEventListener("load", loading);
