@@ -1,10 +1,14 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-    //LOADER WRAPPER----------------------------------------------------------------------------
+//LOADER WRAPPER----------------------------------------------------------------------------
+function loading(){
     //el loader esta visible y lo oculto cuando la pagina esta cargada
     document.getElementById("loader-wrapper").style.opacity = "0";
-    document.getElementById("loader-wrapper").style.zIndex = "-10";
-    //------------------------------------------------------------------------------------------
+    document.getElementById("loader-wrapper").style.zIndex = "0";
+}
+//Agrego el listener
+window.addEventListener("load", loading);
+//------------------------------------------------------------------------------------------
 
+document.addEventListener("DOMContentLoaded", (event) => {
     //Inicializo AOS:
     AOS.init();
 
