@@ -9,16 +9,13 @@
 .bg-4color{
     background-color: #7b00bd !important;
 }
-
 .text-4color{
     color: #7b00bd;
 }
-
 .border-4color{
     border-color:#7b00bd !important;
     color: #7b00bd !important;
 }
-
 /*Acomodarlo en funcion del texto mas largo, para que no genere multi-lineas*/
 .tooltip-inner {
     max-width: 500px !important;
@@ -352,17 +349,13 @@ i[class^="icon-end-timeline fs-2"]{
     text-shadow: 0 0 1px #000, 0 0 2px #000,  0 0 1px #000,  0 0 2px #000,  0 0 3px #000;
     cursor: default;
 }
-#section_myexperiences .card-body,#section_myinfo .card-body, .accordion-button{
+#section_myexperiences .card-body,#section_myinfo .card-body :not(h6), .accordion-button{
     text-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 1px #000, 0 0 2px #000, 0 0 3px #000;
 }
 .job_title{
     filter: brightness(1.3);
-    text-shadow: 0 0 1px #eee, 0 0 2px #aaa,  0 0 1px #aaa,  0 0 2px #eee;
+    text-shadow: 0 0 1px #ccc, 0 0 2px #333,  0 0 1px #333,  0 0 2px #ccc;
 }
-#jobD_interfase{
-    opacity: 60%;
-}
-
 #section_myexperiences a:hover{
     box-shadow: 1px 1px 1px 1px #5a5, -1px -1px 1px 1px #ada;
     filter: brightness(1.1);
@@ -394,4 +387,8 @@ i[class^="fas fa-sm fa-upload text-success"]{
     position: absolute;
     right: 0.2%;
     bottom: 0.2%;
+}
+
+#jobD_interfase{
+    background-color: hsla(279, 100%, 37%, 0.48);
 }
