@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"-->
     <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
 	<title>Leandro Pifano | CV</title>
 	<!-- Mis ETILOS Y JAVASCRIPT -->
@@ -30,12 +32,15 @@
 	<!-- Tag Canvas -->
 	<script src="includes/tagcanvas 2.11/tagcanvas.min.js" type="text/javascript"></script>
 </head>
-<body onscroll="scroll_to()" class="bg-secondary bg-gradient col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<body onpageshow="mobileornot()" onscroll="scroll_to()" class="bg-secondary bg-gradient col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	<!--LOADER-->
 	<section class="loader-wrapper" id="loader-wrapper">
     	<span class="loader"><i class="fas fa-2x fa-spinner fa-spin"></i></span>
 	</section>
 
+	<!---------------
+		voy a crear otro nav para pantallas chicas y mostrar uno u otro segun el dispositivo
+	---------------->
 	<nav class="navbar fixed-top py-1" id="navbar">
 		<!--i class="navbar-ico text-white ps-2 pt-1" id="navbar-ico">000</i-->
 		<a class="mt-0" href="#section_header">Inicio</a>
@@ -44,6 +49,40 @@
 		<a href="#header_myexperiences">Trabajos</a>
 		<a class="mb-5" href="#header_myskills">Skills</a>
 	</nav>
+
+	<nav class="navbar navbar-dark bg-dark bg-opacity-75 fixed-top" id="navbar-02">
+		<div class="container-fluid align-items-start justify-content-start">
+		  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="offcanvas offcanvas-start bg-dark text-bg-dark text-white" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+			<div class="offcanvas-header">
+			  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
+			  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body bg-dark">
+			  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+				<li class="nav-item">
+				  <a class="nav-link" href="#section_header">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#header_myinfo">Info</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#header_mystudies">Estudios</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#header_myexperiences">Trabajos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#header_myskills">Skills</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	  </nav>
+
 	<!-----------1st page START------------------>
 	<section id="section_header" class="d-flex flex-row align-items-center justify-content-center bg-dark bg-gradient text-white text-center min-vh-100 m-0 p-0">
 		<img id="header_img" src="media/yo.png" class="img-fluid align-self-end w-25 col-lg-3 col-sm-3 col-md-4 col-xs-4" alt="...">
@@ -63,7 +102,7 @@
 			</div>
 		</div>
 
-		<div id="myCanvasContainer" class="align-self-end m-0 p-0 me-2 col-lg-3 col-sm-3 col-md-4 col-xs-4">
+		<div id="myCanvasContainer" class="align-self-end m-0 p-0 me-2 col-lg-3 col-md-4 col-sm-3 col-xs-3">
 			<canvas width="320" height="320" id="myCanvas">
 			 <p>Contenido no disponible, verifique compatibilidad con el navegador</p>
 			</canvas>
@@ -92,7 +131,7 @@
 	</div>		
 	<section id="section_myinfo" class="p-0 m-0">
 		<div class="d-flex row justify-content-between col-lg-12 col-sm-12 col-xs-12">
-			<div class="card_contacto card border-white bg-dark bg-opacity-75 col mb-4 mt-3 ps-4 col-lg-4 col-sm-4 col-xs-4" data-aos="fade-down-left" data-aos-duration="1500">
+			<div class="card_contacto card border-white bg-dark bg-opacity-75 mb-4 mt-3 ps-4 col-lg-4 col-sm-4 col-xs-6" data-aos="fade-down-left" data-aos-duration="1500">
 				<div class="card-header border-white text-primary text-center">Datos de Locación</div>
 				<div class="card-body text-white">
 					<h5 class="card-title text-primary">Ciudad de Nacimiento</h5>
@@ -102,7 +141,7 @@
 					<p class="card-text my-0 ms-5"><span class="fs-6 fw-lighter text-secondary">Zona: La Blanqueada</span></p>
 				</div>
 			</div>
-			<div class="card_contacto card border-white bg-dark bg-opacity-75 col mb-3 mt-4 col-lg-4 col-sm-4 col-xs-4" data-aos="fade-down" data-aos-duration="3000">
+			<div class="card_contacto card border-white bg-dark bg-opacity-75 mb-3 mt-4 col-lg-4 col-sm-4 col-xs-6" data-aos="fade-down" data-aos-duration="3000">
 				<div class="card-header border-white text-success text-center">Datos Personales</div>
 				<div class="card-body text-white">
 					<h5 class="card-title text-success">Fecha de Nacimiento</h5>
@@ -115,7 +154,7 @@
 					<p class="card-text my-0 ms-2"><i class="fas fa-passport ms-2 me-3"></i>Pasaporte</p>
 				</div>
 			</div>
-			<div class="card_contacto card border-white bg-dark bg-opacity-75 col mb-4 mt-3 col-lg-4 col-sm-4 col-xs-4" data-aos="fade-down-right" data-aos-duration="1500">
+			<div class="card_contacto card border-white bg-dark bg-opacity-75 mb-4 mt-3 col-lg-4 col-sm-4 col-xs-6" data-aos="fade-down-right" data-aos-duration="1500">
 				<div class="card-header border-white text-info text-center">Datos de Contacto</div>
 				<div class="card-body text-white">
 					<h6 class="card-subtitle mb-2 text-muted text-end">Montevideo, Uruguay</h6>
@@ -126,7 +165,7 @@
 					<p class="card-text my-0 ms-2"><i class="fas fa-envelope mx-2"></i>leandropifano@gmail.com</p>
 				</div>
 			</div>
-			<div id="aboutme" class="card border-4color bg-white bg-opacity-50 mb-5 col col-lg-12 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1500">
+			<div id="aboutme" class="card border-4color bg-white bg-opacity-50 mb-5 col-lg-12 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1500">
 				<div class="card-header border-4color fs-5 text-4color text-center"><i class="fas fa-comments mx-2"></i>Un poco de mi</div>
 				<div class="card-body text-center text-white">
 					<p class="card-text my-1">Profesional con cerca de 10 años de experiencia en en el área de las TICs y del IoTs en general.</p>
@@ -142,7 +181,7 @@
 	<!-----------3rd page START---------------->
 	<div id="header_mystudies" class="title text-center bg-dark bg-opacity-75 py-5" data-aos="fade-right" data-aos-duration="2000">
 		<span class="block"></span>
-		<hr class="text-white"><h1 class="text-white"><i class="fa fs-2 fa-graduation-cap mx-5" data-aos="flip-left" data-aos-duration="3000"></i>Formación Académica<i class="fa fs-2 fa-graduation-cap mx-5" data-aos="flip-right" data-aos-duration="3000"></i></h1><hr class="text-white">
+		<hr class="text-white"><h1 class="text-white"><i class="fa fs-2 fa-graduation-cap mx-4" data-aos="flip-left" data-aos-duration="3000"></i>Formación Académica<i class="fa fs-2 fa-graduation-cap mx-4" data-aos="flip-right" data-aos-duration="3000"></i></h1><hr class="text-white">
 	</div>
 	<section id="section_mystudies" class="m-0 p-0">
 		<div class="d-flex flex-column bg-dark bg-opacity-75 pb-5 w-100 col-lg-12 col-sm-12 col-xs-12">
@@ -276,7 +315,7 @@
 	<!-----------4th page START---------------->
 	<div id="header_myexperiences" class="title text-center py-5" data-aos="flip-left" data-aos-duration="2000">
 		<span class="block"></span>
-		<hr><h1 class="text-dark"><i class="fa fs-2 fa-handshake mx-5" data-aos="fade-right" data-aos-duration="3000"></i>Experiencia Laboral<i class="fa fs-2 fa-handshake mx-5" data-aos="fade-left" data-aos-duration="3000"></i></h1><hr>
+		<hr><h1 class="text-dark"><i class="fa fs-2 fa-handshake mx-4" data-aos="fade-right" data-aos-duration="3000"></i>Experiencia Laboral<i class="fa fs-2 fa-handshake mx-4" data-aos="fade-left" data-aos-duration="3000"></i></h1><hr>
 	</div>
 	<section id="section_myexperiences" class="my-0 py-0">
 		<div class="container pb-5 pt-3 col-lg-12 col-sm-12 col-xs-12">

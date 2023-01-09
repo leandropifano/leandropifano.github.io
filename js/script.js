@@ -1,4 +1,4 @@
-//LOADER WRAPPER----------------------------------------------------------------------------
+//LOADER WRAPPER------------Tiene que ir antes que todo-------------------------------------
 function loading(){
     //el loader esta visible y lo oculto cuando la pagina esta cargada
     document.getElementById("loader-wrapper").style.opacity = "0";
@@ -8,7 +8,33 @@ function loading(){
 window.addEventListener("load", loading);
 //------------------------------------------------------------------------------------------
 
-document.addEventListener("DOMContentLoaded", (event) => {
+
+//Detecto pantalla mobile-------------------------------------------------------------------
+let isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
+function mobileornot(){
+if (isMobile){
+
+    var titulos=document.querySelectorAll("h1");
+    titulos.forEach(element => {
+        element.style.fontSize = "40px";
+    });
+
+    document.getElementById("span_typed").style.fontSize = "18px";
+    
+    //nabvar
+    document.getElementById("navbar").style.visibility = "hidden";
+    document.getElementById("navbar-02").style.visibility = "visible";
+}
+else{
+    //navbar
+    document.getElementById("navbar").style.visibility = "visible";
+    document.getElementById("navbar-02").style.visibility = "hidden";
+}
+};
+//NO lleva listener, funcion onpageshow del body
+//------------------------------------------------------------------------------------------
+
+document.addEventListener("DOMContentLoaded", (event) => {    
     //Inicializo AOS:
     AOS.init();
 
@@ -66,6 +92,10 @@ window.onload = function() {
 
 //SROLLING FUNCTIONS------------------------------------------------------------------------
 function scroll_to(){
+    //document.body.style.width = window.innerWidth + "px";
+    //console.log("W " + window.innerWidth);
+    //console.log("B " + document.body.offsetWidth);
+    //console.log(document.body.style.width.substring);
     //elementos de referencia
     var pos_myinfo = document.getElementById('section_myinfo').getBoundingClientRect();
     var pos_myexperiences = document.getElementById('header_myexperiences').getBoundingClientRect();
@@ -116,3 +146,12 @@ function scroll_to(){
 //Agrego Listener
 document.body.addEventListener("scroll", scroll_to);
 //----------------------------------------------------------------------
+
+/*
+function evitoResizeW(){
+    window.resizeTo(document.body.offsetWidth,document.body.offsetHeight);
+}
+
+window.addEventListener("resize", evitoResizeW);
+*/
+
