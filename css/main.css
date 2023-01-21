@@ -172,6 +172,9 @@ footer{
     min-width: 1000px;
     max-width: 1000px;
 }
+#section_myskills{
+    height: 100%;
+}
 .card_contacto{
     /*width: 380px;*/
     max-width: 95% !important;

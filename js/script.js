@@ -20,6 +20,13 @@ if (isMobile){
     });
 
     document.getElementById("span_typed").style.fontSize = "18px";
+
+    document.getElementById("card-develop").style.width = "500px";
+    document.getElementById("card-infra").style.width = "500px";
+    document.getElementById("card-infra").style.margin = "6px 0 0 30px";
+    document.getElementById("card-desing").style.width = "500px";
+    document.getElementById("card-desing").style.margin = "6px 0 0 40px";
+    document.getElementById("card-other").style.width = "550px";
     
     //nabvar
     document.getElementById("navbar").style.visibility = "hidden";
@@ -29,6 +36,8 @@ else{
     //navbar
     document.getElementById("navbar").style.visibility = "visible";
     document.getElementById("navbar-02").style.visibility = "hidden";
+
+    document.getElementById("card-other").style.width = "950px";
 }
 };
 //NO lleva listener, funcion onpageshow del body
