@@ -21,6 +21,11 @@ if (isMobile){
 
     document.getElementById("span_typed").style.fontSize = "18px";
 
+    document.getElementById("header_img").style.width = "300px";
+    document.getElementById("header_img").style.height = "300px";
+    document.getElementById("myCanvasContainer").childNodes[1].style.width = "200px";
+    document.getElementById("myCanvasContainer").childNodes[1].style.height = "200px";
+
     document.getElementById("card-develop").style.width = "500px";
     document.getElementById("card-infra").style.width = "500px";
     document.getElementById("card-infra").style.margin = "6px 0 0 30px";
@@ -33,6 +38,9 @@ if (isMobile){
     document.getElementById("navbar-02").style.visibility = "visible";
 }
 else{
+    document.getElementById("header_img").style.width = "400px";
+    document.getElementById("header_img").style.height = "400px";
+
     //navbar
     document.getElementById("navbar").style.visibility = "visible";
     document.getElementById("navbar-02").style.visibility = "hidden";

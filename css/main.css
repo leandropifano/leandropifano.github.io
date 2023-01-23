@@ -48,6 +48,7 @@ a i[data-bs-toggle="tooltip"]{
 .myname h1{
     font: 100 75px/1.2 "Garamond";
     text-shadow: 0 0 2px #00c, 0 0 3px #00f, 0 0 4px #00f, 0 0 3px #aaf, 0 0 6px #aaf, 0 0 8px #aaf;
+    /*white-space:nowrap;*/
 }
 #span_typed{
     font: 500 30px/1.2 "Indie Flower";
