@@ -144,14 +144,14 @@ footer{
     background: url(../media/Fondo_Adn.png) no-repeat center top;
     background-size: cover;
     height: 100%;
-    background-attachment: fixed;
+    background-attachment:scroll;
     background-color: hsla(0, 0%, 91%, 0.6);
 }
 #section_mystudies{
     background: url(../media/Fondo_Raices.png) no-repeat center top;
     background-size: cover;
     height: 100%;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-color: hsla(24, 41%, 51%, 0.8);
 }
 #header_myexperiences{
@@ -161,7 +161,7 @@ footer{
     background: url(../media/Fondo_Arbol.png) no-repeat center top;
     background-size: cover;
     height: 100%;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-color: hsla(25, 70%, 18%, 0.6);
 }
 #section_myexperiences .container h3{
