@@ -38,8 +38,6 @@ if (isMobile){
     document.getElementById("navbar-02").style.visibility = "visible";
 }
 else{
-    document.getElementById("header_img").style.width = "400px";
-    document.getElementById("header_img").style.height = "400px";
 
     //navbar
     document.getElementById("navbar").style.visibility = "visible";
