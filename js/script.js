@@ -23,14 +23,14 @@ if (isMobile){
 
     document.getElementById("header_img").style.width = "300px";
     document.getElementById("header_img").style.height = "300px";
-    document.getElementById("myCanvasContainer").childNodes[1].style.width = "200px";
-    document.getElementById("myCanvasContainer").childNodes[1].style.height = "200px";
+    //document.getElementById("myCanvasContainer").childNodes[1].style.width = "200px";
+    //document.getElementById("myCanvasContainer").childNodes[1].style.height = "200px";
 
     document.getElementById("card-develop").style.width = "500px";
     document.getElementById("card-infra").style.width = "500px";
-    document.getElementById("card-infra").style.margin = "6px 0 0 30px";
+    document.getElementById("card-infra").style.margin = "6px 0 0 25px";
     document.getElementById("card-desing").style.width = "500px";
-    document.getElementById("card-desing").style.margin = "6px 0 0 40px";
+    document.getElementById("card-desing").style.margin = "6px 0 0 25px";
     document.getElementById("card-other").style.width = "550px";
     
     //nabvar

@@ -222,7 +222,7 @@ footer{
     position: static;
     /*top: 80px;*/
     /*height: 1405px;*/
-    height: 200vh;
+    height: 88rem;
     margin-top: 1.5%;
     margin-right: 2%;
     border-right: 5px solid blue;
@@ -231,7 +231,7 @@ footer{
 #timeline-01 h3:first-of-type:not(#timeline-02 h3, #timeline-03 h3, #timeline-04 h3, #timeline-06 h3){
     position: relative;
     top: 1%;
-    right: -97%;
+    left: 7vw;
 }
 #timeline-01 hr:first-of-type:not(#timeline-02 hr, #timeline-03 hr, #timeline-04 hr, #timeline-06 hr){
     position: static;
