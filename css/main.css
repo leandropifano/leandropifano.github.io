@@ -230,13 +230,13 @@ footer{
 }
 #timeline-01 h3:first-of-type:not(#timeline-02 h3, #timeline-03 h3, #timeline-04 h3, #timeline-06 h3){
     position: relative;
-    top: 8px;
-    right: -100px;
+    top: 1%;
+    right: -97%;
 }
 #timeline-01 hr:first-of-type:not(#timeline-02 hr, #timeline-03 hr, #timeline-04 hr, #timeline-06 hr){
     position: static;
-    margin-top: -30px;
-    margin-left: -240px;
+    margin-top: -30%;
+    margin-left: -240%;
 }
 #timeline-06{
     position: relative;
@@ -252,7 +252,7 @@ footer{
 #timeline-06 hr{
     position: static;
     margin-top: 2%;
-    margin-left: -120px;
+    margin-left: -10vw;
     opacity: 90%;
 }
 #timeline-02{
