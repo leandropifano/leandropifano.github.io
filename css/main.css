@@ -241,9 +241,9 @@ footer{
 #timeline-06{
     position: relative;
     /*top: 80px;*/
-    height: 115vh;
+    height: 130vh;
     margin-top: 17%;
-    margin-right: 8%;
+    margin-right: 7%;
     border-right: 5px dashed green;
     opacity: 50%;
     float: right;
