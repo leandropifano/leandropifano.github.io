@@ -223,7 +223,7 @@ footer{
     /*top: 80px;*/
     /*height: 1405px;*/
     height: 87.5rem;
-    margin-top: 1.5%;
+    margin-top: 2.5vh;
     margin-right: 0;
     border-right: 5px solid blue;
     float: right;
@@ -235,15 +235,15 @@ footer{
 }
 #timeline-01 hr:first-of-type:not(#timeline-02 hr, #timeline-03 hr, #timeline-04 hr, #timeline-06 hr){
     position: static;
-    margin-top: -30%;
-    margin-left: -240%;
+    margin-top: -5vh;
+    margin-left: -17vw;
 }
 #timeline-06{
     position: static;
     /*top: 80px;*/
     height: 130vh;
-    margin-top: 17%;
-    margin-right: 6%;
+    margin-top: 32vh;
+    margin-right: 6vw;
     border-right: 5px dashed green;
     opacity: 50%;
     float: right;
@@ -251,7 +251,7 @@ footer{
 }
 #timeline-06 hr{
     position: static;
-    margin-top: 2%;
+    margin-top: 1vh;
     margin-left: -10vw;
     opacity: 90%;
 }
@@ -259,26 +259,26 @@ footer{
     position: static;
     /*top: 80px;*/
     height: 10vh;
-    margin-top: 2.5%;
-    margin-right: -7%;
+    margin-top: 4vh;
+    margin-right: -5vw;
     border-right: 5px solid #7b00bd;
     float: right;
 }
 #timeline-02 h3:first-of-type{
     position: relative;
-    top: 2%;
+    top: 1vh;
     right: -110%;
 }
 #timeline-02 hr:first-of-type{
     position: static;
-    margin-top: -30%;
+    margin-top: -5vh;
     margin-left: -8vw;
 }
 #timeline-03{
     position: static;
     /*top: 80px;*/
     height: 30vh;
-    margin-top: 2.5%;
+    margin-top: 4vh;
     margin-right: -8.9vw;
     border-right: 5px solid cyan;
     float: right;
@@ -295,15 +295,15 @@ footer{
 }
 #timeline-03 hr:first-of-type{
     position: static;
-    margin-top: -5%;
-    margin-left: -70%;
+    margin-top: -1vh;
+    margin-left: -9vw;
 }
 #timeline-04{
     position: static;
     /*top: 80px;*/
     height: 36vh;
     margin-top: 17vh;
-    margin-right: -3.5%;
+    margin-right: -0.35vw;
     border-right: 5px solid white;
     float: right;
 }
@@ -314,15 +314,15 @@ footer{
 }
 #timeline-04 hr:first-of-type{
     position: static;
-    margin-top: -35%;
-    margin-left: -120%;
+    margin-top: -7vh;
+    margin-left: -11vw;
 }
 #timeline-05{
     position: static;
     /*top: 80px;*/
     height: 55vh;
-    margin-top: 80%;
-    margin-right: -2%;
+    margin-top: 17vh;
+    margin-right: -0.2vw;
     border-right: 5px solid green;
     float: right;
 }
