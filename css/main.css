@@ -222,7 +222,7 @@ footer{
     position: static;
     /*top: 80px;*/
     /*height: 1405px;*/
-    height: 88rem;
+    height: 87.5rem;
     margin-top: 1.5%;
     margin-right: 0;
     border-right: 5px solid blue;
@@ -239,11 +239,11 @@ footer{
     margin-left: -240%;
 }
 #timeline-06{
-    position: relative;
+    position: static;
     /*top: 80px;*/
     height: 130vh;
     margin-top: 17%;
-    margin-right: 7%;
+    margin-right: 6%;
     border-right: 5px dashed green;
     opacity: 50%;
     float: right;
@@ -279,7 +279,7 @@ footer{
     /*top: 80px;*/
     height: 30vh;
     margin-top: 2.5%;
-    margin-right: -10%;
+    margin-right: -8.9vw;
     border-right: 5px solid cyan;
     float: right;
 }
