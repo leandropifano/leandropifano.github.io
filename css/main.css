@@ -224,14 +224,14 @@ footer{
     /*height: 1405px;*/
     height: 88rem;
     margin-top: 1.5%;
-    margin-right: 2%;
+    margin-right: 0;
     border-right: 5px solid blue;
     float: right;
 }
 #timeline-01 h3:first-of-type:not(#timeline-02 h3, #timeline-03 h3, #timeline-04 h3, #timeline-06 h3){
     position: relative;
-    top: 1%;
-    left: 7vw;
+    top: 2%;
+    right: 2.5%;
 }
 #timeline-01 hr:first-of-type:not(#timeline-02 hr, #timeline-03 hr, #timeline-04 hr, #timeline-06 hr){
     position: static;
@@ -272,7 +272,7 @@ footer{
 #timeline-02 hr:first-of-type{
     position: static;
     margin-top: -30%;
-    margin-left: -85%;
+    margin-left: -8vw;
 }
 #timeline-03{
     position: static;
@@ -302,8 +302,8 @@ footer{
     position: static;
     /*top: 80px;*/
     height: 36vh;
-    margin-top: 80%;
-    margin-right: -3%;
+    margin-top: 17vh;
+    margin-right: -3.5%;
     border-right: 5px solid white;
     float: right;
 }
