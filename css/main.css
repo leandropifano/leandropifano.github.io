@@ -48,7 +48,7 @@ a i[data-bs-toggle="tooltip"]{
 .myname h1{
     font: 100 75px/1.2 "Garamond";
     text-shadow: 0 0 2px #00c, 0 0 3px #00f, 0 0 4px #00f, 0 0 3px #aaf, 0 0 6px #aaf, 0 0 8px #aaf;
-    /*white-space:nowrap;*/
+    white-space:nowrap;
 }
 #span_typed{
     font: 500 30px/1.2 "Indie Flower";
@@ -125,9 +125,8 @@ div[id^="header_my"]::after{
 #header_img{
     z-index: 200;
     width: 25%;
-    opacity: 40%;
-    filter: grayscale(40%);
-    filter: drop-shadow(8px 8px 20px #aaf);
+    opacity: 30%;
+    filter: grayscale(70%) drop-shadow(8px 8px 20px #aaf);
     pointer-events: none;  
     user-select: none;
     -moz-user-select: none;
@@ -195,18 +194,20 @@ footer{
 .card-skills:hover i, .card-skills:hover img{
     filter: contrast(0.7) brightness(0.8) !important;
 }
-#card-develop:hover{
+
+.card-develop-transf:hover{
     transform: scale(1.3) translateX(60px) !important;
 }
-#card-infra:hover{
+.card-infra-transf:hover{
     transform: scale(1.3) !important;
 }
-#card-desing:hover{
+.card-desing-transf:hover{
     transform: scale(1.3) translateX(-60px) !important;
 }
-#card-other:hover{
+.card-other-transf:hover{
     transform: scale(1.2) translateY(-60px) !important;
 }
+
 .timeline{
     position: relative;
     height: 100%;

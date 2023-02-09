@@ -23,6 +23,7 @@ if (isMobile){
 
     document.getElementById("header_img").style.width = "300px";
     document.getElementById("header_img").style.height = "300px";
+    document.getElementById("header_img").style.transform = "translateX(100px)";
     //document.getElementById("myCanvasContainer").childNodes[1].style.width = "200px";
     //document.getElementById("myCanvasContainer").childNodes[1].style.height = "200px";
 
@@ -38,6 +39,11 @@ if (isMobile){
     document.getElementById("navbar-02").style.visibility = "visible";
 }
 else{
+
+    document.getElementById("card-develop").classList.add("card-develop-transf");
+    document.getElementById("card-infra").classList.add("card-infra-transf");
+    document.getElementById("card-desing").classList.add("card-desing-transf");
+    document.getElementById("card-other").classList.add("card-other-transf");
 
     //navbar
     document.getElementById("navbar").style.visibility = "visible";
