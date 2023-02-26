@@ -401,3 +401,10 @@ i[class^="fas fa-sm fa-upload text-success"]{
 #jobD_interfase{
     background-color: hsla(279, 100%, 37%, 0.48);
 }
+
+/*ACAAA ESTOY!!
+#section_mystudies .card h3:last-of-type span::before{
+    content: '\A'; 
+    white-space: pre;
+}
+*/

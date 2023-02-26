@@ -21,18 +21,23 @@ if (isMobile){
 
     document.getElementById("span_typed").style.fontSize = "18px";
 
-    document.getElementById("header_img").style.width = "300px";
-    document.getElementById("header_img").style.height = "300px";
-    document.getElementById("header_img").style.transform = "translateX(100px)";
+    document.getElementById("header_img").style.width = "70vw";
+    document.getElementById("header_img").style.height = "70vw";
+    document.getElementById("header_img").style.transform = "translateX(25vw)";
+    document.getElementById("section_header").querySelector("div:first-of-type") .style.transform = "translateX(-15vw)";
     //document.getElementById("myCanvasContainer").childNodes[1].style.width = "200px";
     //document.getElementById("myCanvasContainer").childNodes[1].style.height = "200px";
 
-    document.getElementById("card-develop").style.width = "500px";
-    document.getElementById("card-infra").style.width = "500px";
-    document.getElementById("card-infra").style.margin = "6px 0 0 25px";
-    document.getElementById("card-desing").style.width = "500px";
-    document.getElementById("card-desing").style.margin = "6px 0 0 25px";
-    document.getElementById("card-other").style.width = "550px";
+    //ACAAA ESTOY!!
+    //document.getElementById("section_mystudies").querySelector(".card h3:last-of-type span").style.border = "1px solid yellow";
+
+
+    document.getElementById("card-develop").style.width = "95vw";
+    document.getElementById("card-infra").style.width = "95vw";
+    document.getElementById("card-infra").style.margin = "1vh 0 0 4vw";
+    document.getElementById("card-desing").style.width = "95vw";
+    document.getElementById("card-desing").style.margin = "1vh 0 1vh 4vw";
+    document.getElementById("card-other").style.width = "98vw";
     
     //nabvar
     document.getElementById("navbar").style.visibility = "hidden";
