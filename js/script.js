@@ -28,8 +28,11 @@ if (isMobile){
     //document.getElementById("myCanvasContainer").childNodes[1].style.width = "200px";
     //document.getElementById("myCanvasContainer").childNodes[1].style.height = "200px";
 
-    //ACAAA ESTOY!!
-    //document.getElementById("section_mystudies").querySelector(".card h3:last-of-type span").style.border = "1px solid yellow";
+    var diplomas=document.querySelectorAll(".spantitulos");
+    diplomas.forEach(e => {
+        e.classList.remove('bg-info');
+        e.classList.add('spantitulos_celus');
+    });
 
 
     document.getElementById("card-develop").style.width = "95vw";
