@@ -24,16 +24,27 @@ if (isMobile){
     document.getElementById("header_img").style.width = "70vw";
     document.getElementById("header_img").style.height = "70vw";
     document.getElementById("header_img").style.transform = "translateX(25vw)";
-    document.getElementById("section_header").querySelector("div:first-of-type") .style.transform = "translateX(-15vw)";
+    document.getElementById("section_header").querySelector("div:first-of-type").style.transform = "translateX(-15vw)";
     //document.getElementById("myCanvasContainer").childNodes[1].style.width = "200px";
     //document.getElementById("myCanvasContainer").childNodes[1].style.height = "200px";
 
+
     var diplomas=document.querySelectorAll(".spantitulos");
     diplomas.forEach(e => {
-        e.classList.remove('bg-info');
-        e.classList.add('spantitulos_celus');
+        e.classList.remove('bg-info','text-danger');
+        e.classList.add('spantitulos_celus','text-4color');
     });
 
+    document.getElementById("titulo_redes").classList.add("fs-5");
+
+
+
+    var linkedingcert=document.getElementById("collapse_10").querySelectorAll("sup")
+    linkedingcert.forEach(e => {
+        e.removeChild(e.firstChild);
+        e.lastChild.style.transform = "translateX(4vw)";
+    });
+    
 
     document.getElementById("card-develop").style.width = "95vw";
     document.getElementById("card-infra").style.width = "95vw";
