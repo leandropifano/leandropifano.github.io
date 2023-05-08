@@ -63,6 +63,16 @@ html{
     font: 700 80px/1.5 "Garamond";
     padding: 60px 0 30px 0;
 }
+
+#cv_pdf{
+    position: absolute;
+    top: 3vh;
+    left: 93%;
+    opacity: 50%;
+}
+#cv_pdf:hover{
+    filter: brightness(1.3);
+}
 #navbar {
     visibility: hidden;
     z-index: 400;
