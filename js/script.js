@@ -226,4 +226,3 @@ function evitoResizeW(){
 
 window.addEventListener("resize", evitoResizeW);
 */
-
